@@ -8,6 +8,7 @@ class User {
     this.hobbies = userData.hobbies;
     this.currency = userData.currency;
     this.segment = userData.segment;
+    this.device = userData.device;
   }
 }
 

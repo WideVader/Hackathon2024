@@ -75,20 +75,20 @@ exports.updateMedians = functions.firestore.document('transactions/{transactionI
             });
             const types = Array.from(groupSet);
 
-            // Calculate median for each type
-            const medians = {};
-            types.forEach(type => {
-                const typeMedian = calculateMedianForType(snapshot.docs.map(doc => doc.data()), type);
-                medians[type] = typeMedian;
-            });
+            // // Calculate median for each type
+            // const medians = {};
+            // types.forEach(type => {
+            //     const typeMedian = calculateMedianForType(snapshot.docs.map(doc => doc.data()), type);
+            //     medians[type] = typeMedian;
+            // });
 
-            // Update the 'median_collection' with the calculated medians
-            const batch = db.batch();
-            Object.entries(medians).forEach(([type, median]) => {
-                const medianDocRef = db.collection('median_collection').doc(type);
-                batch.set(medianDocRef, { median: median });
-            });
-            await batch.commit();
+            // // Update the 'median_collection' with the calculated medians
+            // const batch = db.batch();
+            // Object.entries(medians).forEach(([type, median]) => {
+            //     const medianDocRef = db.collection('median_collection').doc(type);
+            //     batch.set(medianDocRef, { median: median });
+            // });
+            // await batch.commit();
 
             return null;
         } catch (error) {

@@ -1,9 +1,13 @@
 const express = require('express');
-const router = express.Router();
-
+const router = express.Router()
+import { addData } from "./db/realTimeDatabase.js";
+import { validateRequest } from './services/detection_handler';
 
 router.post('/transaction', (req, res) => {
-  res.send('Example route');
+  let isValid = validateRequest(validateRequest)
+  req.body.transction.fraud = isValid
+  addData("transactions", req.body.transction)
+  res.send(isValid);
 });
 
 // Export the router instance
