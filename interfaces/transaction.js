@@ -10,5 +10,9 @@ class Transaction {
     this.issuer = transactionData.issuer;
     this.product = transactionData.product;
     this.user_id = transactionData.user_id;
+    this.time = transactionData.time;
+    this.fraud = transactionData.fraud;
   }
 }
+
+export { Transaction };

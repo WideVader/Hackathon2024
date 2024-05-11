@@ -1,12 +1,41 @@
-import { addData, getData } from "./db/realTimeDatabase.js";
+import { uploadAllFixtures } from "./db/fixtures.js";
+import { getData } from "./db/realTimeDatabase.js";
 
-async function testFirebase() {
-  const path = "test/data";
-  const testData = { name: "Test User", age: 30, active: true };
+const runUploadProcess = async () => {
+  console.log("Starting to upload fixtures...");
+  try {
+    await uploadAllFixtures();
+    console.log("Finished uploading all fixtures.");
+  } catch (error) {
+    console.error("Error occurred during fixtures upload:", error);
+  }
+};
 
-  console.log("Adding data...");
-  const key = await addData(path, testData);
-  console.log(`Data added at key: ${key}`);
+async function logCompanyData() {
+  const companyData = await getData("/companies");
+  if (companyData) {
+    console.log("Company Data:", Object.values(companyData));
+  } else {
+    console.log("No company data available.");
+  }
 }
 
-testFirebase().catch(console.error);
+async function logTransactionData() {
+  const transactionData = await getData("/transactions");
+  if (transactionData) {
+    console.log("Transaction Data:", Object.values(transactionData));
+  } else {
+    console.log("No transaction data available.");
+  }
+}
+
+async function logUserData() {
+  const userData = await getData("/users");
+  if (userData) {
+    console.log("User Data:", Object.values(userData));
+  } else {
+    console.log("No user data available.");
+  }
+}
+
+logTransactionData().catch(console.error);

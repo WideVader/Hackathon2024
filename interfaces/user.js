@@ -10,3 +10,5 @@ class User {
     this.segment = userData.segment;
   }
 }
+
+export { User };

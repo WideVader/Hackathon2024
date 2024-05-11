@@ -1,8 +1,11 @@
 class Company {
   constructor(companyData) {
-    this.id = transactionData.id;
-    this.location = transactionData.location;
-    this.currency = transactionData.currency;
-    this.category = transactionData.category;
+    this.id = companyData.id;
+    this.name = companyData.name;
+    this.location = companyData.location;
+    this.currency = companyData.currency;
+    this.category = companyData.category;
   }
 }
+
+export { Company };
