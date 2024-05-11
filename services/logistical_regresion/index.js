@@ -1,19 +1,32 @@
-import fs from 'fs';
-import _ from 'lodash';
+import {exec} from 'child_process'
 
-// Read data from JSON file
-const jsonData = JSON.parse(fs.readFileSync('database.json'));
+export default function predict(Obj) {
+    // Convert Obj to a JSON string
+    const jsonData = JSON.stringify(Obj);
 
-// Extract arrays from JSON data
-const transactionsData = jsonData.transactions;
-const companiesData = jsonData.companies;
-const userData = jsonData.users;
-
-// Perform merging
-const mergedData = {
-    mergedTransactions: _.merge(transactionsData, companiesData, { 'issuer': 'name' }),
-    userData: userData
+    // Execute the Python script
+    exec(`python predict.py '${jsonData}'`, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing Python script: ${error}`);
+            return;
+        }
+        // Process the result from the Python script
+        console.log('Output from Python script:');
+        console.log(stdout);
+    });
 };
 
-// Write merged data to a file
-fs.writeFileSync('merged_data.json', JSON.stringify(mergedData));
+
+export function train() {
+
+    // Execute the Python script
+    exec(`python trainModel.py`, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing Python script: ${error}`);
+            return;
+        }
+        // Process the result from the Python script
+        console.log('Output from Python script:');
+        console.log(stdout);
+    });
+};

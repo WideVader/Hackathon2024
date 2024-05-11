@@ -1,21 +1,14 @@
 import pandas as pd
 import pickle
+import sys
+import json
 
 # Load pipeline (deserialize)
 with open('filename.pickle', 'rb') as handle:
     pipeline = pickle.load(handle)
 
 # Define the new data
-new_data = pd.json_normalize([{
-    "age": "asa",
-    "price": 1114,
-    "t_currency": "EUR",
-    "issuer": "Visa",
-    "product": "E-book",
-    "gender": "female",
-    "currency": "EUR",
-    "segment": "Senior",
-}])
+new_data = pd.json_normalize(json.loads(sys.argv[1]))
 
 # Example preprocessing steps for new_data
 new_data['age'] = new_data['age'].astype(str)
