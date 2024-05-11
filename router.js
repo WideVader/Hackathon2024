@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/example', (req, res) => {
+router.post('/transaction', (req, res) => {
   res.send('Example route');
 });
 
