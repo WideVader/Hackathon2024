@@ -1,0 +1,15 @@
+{
+  "name": "hackathon2024",
+  "version": "1.0.0",
+  "description": "FAMNIT Hackathon 3.0 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.11.1"
+  }
+}
