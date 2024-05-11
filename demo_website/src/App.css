@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  padding: 0 10px 10px 10px;
+  background-color: #7091e6;
+  color: white;
+  font-size: 30px;
+}
+
+.phishing-icon {
+  font-size: 40px;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.default-button {
+  color: #2c3e50;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border: 2px #2c3e50;
+  border-radius: 5px;
+  margin: 10px 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.default-button:hover {
+  color: #ffffff;
+  background-color: #7091e6;
+  border-color: #7091e6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input {
+  border: 2px solid #c7c7c7;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(168, 168, 168);
+}
