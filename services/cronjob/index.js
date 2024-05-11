@@ -7,6 +7,22 @@ const functions = require('firebase-functions');
 const firebaseAdminApp = initializeApp();
 const db = firebaseAdminApp.firestore(); // Get a Firestore instance
 
+function calculateMedian(values) {
+    // First, let's sort the array
+    values.sort((a, b) => a - b);
+  
+    const length = values.length;
+    
+    // If the length is odd, the median is the middle element
+    if (length % 2 === 1) {
+      return values[Math.floor(length / 2)];
+    } else {
+      // If the length is even, the median is the average of the two middle elements
+      const midIndex = length / 2;
+      return (values[midIndex - 1] + values[midIndex]) / 2;
+    }
+  }
+
 // Function to calculate median for a specific type of data
 function calculateMedianForType(data, type) {
     // Filter data for the given type
