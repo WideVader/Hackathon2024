@@ -1,10 +1,11 @@
 class Transaction {
   constructor(transactionData) {
     this.id = transactionData.id;
-    this.location = transactionData.location;
+    this.t_latitude = transactionData.t_latitude;
+    this.t_longitude = transactionData.t_longitude;
     this.user_agent = transactionData.user_agent;
     this.price = transactionData.price;
-    this.currency = transactionData.currency;
+    this.t_currency = transactionData.t_currency;
     this.weather = transactionData.weather;
     this.category = transactionData.category;
     this.issuer = transactionData.issuer;

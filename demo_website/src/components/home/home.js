@@ -8,8 +8,8 @@ function Home() {
     user_agent: navigator.userAgent,
     price: "",
     currency: "",
-    weather: "",
-    category: "",
+    weather: "Sunny", // Default weather option
+    category: "Electronics", // Default category option
     issuer: "",
     product: "",
     user_id: "",
@@ -32,9 +32,8 @@ function Home() {
 
   return (
     <>
-      {" "}
-      <h1>Make a purchase</h1>
       <form onSubmit={handleSubmit}>
+        <h1>Make a purchase</h1>
         <input
           type="text"
           name="location"
@@ -56,20 +55,7 @@ function Home() {
           onChange={handleChange}
           placeholder="Currency"
         />
-        <input
-          type="text"
-          name="weather"
-          value={transactionData.weather}
-          onChange={handleChange}
-          placeholder="Weather"
-        />
-        <input
-          type="text"
-          name="category"
-          value={transactionData.category}
-          onChange={handleChange}
-          placeholder="Category"
-        />
+
         <input
           type="text"
           name="issuer"
@@ -91,6 +77,78 @@ function Home() {
           onChange={handleChange}
           placeholder="User ID"
         />
+        <div className="radio-buttons">
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="weather"
+              value="Sunny"
+              checked={transactionData.weather === "Sunny"}
+              onChange={handleChange}
+            />
+            <span className="material-symbols-outlined icon">sunny</span>
+            <span className="tooltiptext">Sunny</span>
+          </label>
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="weather"
+              value="Storm"
+              checked={transactionData.weather === "Storm"}
+              onChange={handleChange}
+            />
+            <span class="material-symbols-outlined icon">thunderstorm</span>
+            <span className="tooltiptext">Storm</span>
+          </label>
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="weather"
+              value="Rainy"
+              checked={transactionData.weather === "Rainy"}
+              onChange={handleChange}
+            />
+            <span className="material-symbols-outlined icon">rainy</span>
+            <span className="tooltiptext">Rainy</span>
+          </label>
+        </div>
+
+        <div className="radio-buttons">
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="category"
+              value="Electronics"
+              checked={transactionData.category === "Electronics"}
+              onChange={handleChange}
+            />
+            <span class="material-symbols-outlined icon">electric_bolt</span>
+            <span className="tooltiptext">Electronics</span>
+          </label>
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="category"
+              value="Books"
+              checked={transactionData.category === "Books"}
+              onChange={handleChange}
+            />{" "}
+            <span class="material-symbols-outlined icon">menu_book</span>
+            <span className="tooltiptext">Books</span>
+          </label>
+          <label className="tooltip">
+            <input
+              type="radio"
+              name="category"
+              value="Apparel"
+              checked={transactionData.category === "Apparel"}
+              onChange={handleChange}
+            />
+            <span class="material-symbols-outlined icon">apparel</span>
+            <span className="tooltiptext">Clothing</span>
+          </label>
+        </div>
+
         <button className="default-button" type="submit">
           Submit Transaction
         </button>

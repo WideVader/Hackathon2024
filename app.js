@@ -38,4 +38,13 @@ async function logUserData() {
   }
 }
 
-logTransactionData().catch(console.error);
+async function logOneTransactionData(id) {
+  const transaction = await getData(`/transactions/${id}`);
+  if (transaction) {
+    console.log("User Data:", Object.values(transaction));
+  } else {
+    console.log("No user data available.");
+  }
+}
+
+logOneTransactionData(1).catch(console.error);

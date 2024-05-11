@@ -2,8 +2,9 @@ class Company {
   constructor(companyData) {
     this.id = companyData.id;
     this.name = companyData.name;
-    this.location = companyData.location;
-    this.currency = companyData.currency;
+    this.c_latitude = companyData.c_latitude;
+    this.c_longitude = companyData.c_longitude;
+    this.c_currency = companyData.c_currency;
     this.category = companyData.category;
   }
 }
