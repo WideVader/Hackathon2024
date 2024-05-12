@@ -2,9 +2,17 @@ import pandas as pd
 import pickle
 import sys
 import json
+import os
+
+
+# Get the directory of the current Python script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the pickle file
+pickle_file_path = os.path.join(current_dir, 'filename.pickle')
 
 # Load pipeline (deserialize)
-with open('filename.pickle', 'rb') as handle:
+with open(pickle_file_path, 'rb') as handle:
     pipeline = pickle.load(handle)
 
 # Define the new data

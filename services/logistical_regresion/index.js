@@ -1,11 +1,15 @@
 import {exec} from 'child_process'
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-export default function predict(Obj) {
+const currentDir = dirname(fileURLToPath(import.meta.url));
+
+export function predict(Obj) {
     // Convert Obj to a JSON string
     const jsonData = JSON.stringify(Obj);
-
+    const pythonScriptPath = join(currentDir, 'predict.py');
     // Execute the Python script
-    exec(`python predict.py '${jsonData}'`, (error, stdout, stderr) => {
+    exec(`python ${pythonScriptPath} '${jsonData}'`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error executing Python script: ${error}`);
             return;
@@ -18,9 +22,9 @@ export default function predict(Obj) {
 
 
 export function train() {
-
+    const pythonScriptPath = join(currentDir, 'trainModel.py');
     // Execute the Python script
-    exec(`python trainModel.py`, (error, stdout, stderr) => {
+    exec(`python ${pythonScriptPath}`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error executing Python script: ${error}`);
             return;
@@ -30,3 +34,16 @@ export function train() {
         console.log(stdout);
     });
 };
+
+// train()
+
+predict([{
+    "age": 95,
+    "price": 1000,
+    "t_currency": "EUR",
+    "issuer": "Visa",
+    "product": "Phone",
+    "gender": "male",
+    "currency": "USD",
+    "segment": "Senior",
+}]);

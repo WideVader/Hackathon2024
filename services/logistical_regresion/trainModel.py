@@ -6,9 +6,18 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 import pickle
+import os
+
+
+# Get the directory of the current Python script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the pickle file
+pickle_file_path = os.path.join(current_dir, 'database.json')
+pickle_file_path2 = os.path.join(current_dir, 'filename.pickle')
 
 # Load JSON data
-with open('./database.json', 'r') as f:
+with open(pickle_file_path, 'r') as f:
     data = json.load(f)
 
 # Convert JSON data to pandas DataFrames
@@ -56,5 +65,5 @@ accuracy = accuracy_score(y_test, predictions)
 print("Accuracy:", accuracy)
 
 # Store the pipeline (serialize)
-with open('filename.pickle', 'wb') as file:
+with open(pickle_file_path2, 'wb') as file:
     pickle.dump(pipeline, file, protocol=pickle.HIGHEST_PROTOCOL)
