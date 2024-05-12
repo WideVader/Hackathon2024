@@ -1,98 +1,109 @@
 //branko here you can write cronnjob code
 
-const { initializeApp } = require("firebase-admin");
-const functions = require('firebase-functions');
-const { getData } = require("../../db/realTimeDatabase");
+//change imporrts to your ES module scope
+//import fs
+
+import fs from 'fs';
+
+import { getData } from "../../db/realTimeDatabase.js";
+import { train } from '../logistical_regresion/index.js';
 
 // Initialize Firebase Admin SDK
-const firebaseAdminApp = initializeApp();
-const db = firebaseAdminApp.firestore(); // Get a Firestore instance
+const USER_PROFILE_UPDATER_INTERVAL = 1000 * 60 * 10; // 10 minutes
+const TRAIN_MODEL_INTERAVL = 1000 * 60 * 60; //1h
 
-function calculateMedian(values) {
-    // First, let's sort the array
-    values.sort((a, b) => a - b);
-  
-    const length = values.length;
-    
-    // If the length is odd, the median is the middle element
-    if (length % 2 === 1) {
-      return values[Math.floor(length / 2)];
-    } else {
-      // If the length is even, the median is the average of the two middle elements
-      const midIndex = length / 2;
-      return (values[midIndex - 1] + values[midIndex]) / 2;
-    }
-  }
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Function to calculate median for a specific type of data
-function calculateMedianForType(data, type) {
-    // Filter data for the given type
-    const filteredData = data.filter(item => item.type === type);
 
-    // Extract values for the given type
-    const values = filteredData.map(item => item.value);
 
-    // Calculate median for the values
-    const median = calculateMedian(values);
-    return median;
+const handleUserAgents = (unanalized_transactions, user) => {
+    unanalized_transactions.forEach(transaction => {
+        user.user_agents[transaction.user_agent] ? user.user_agents[transaction.user_agent] = { number_of_transactions: 1 } : user.user_agents[transaction.user_agent].number_of_transactions++
+    })
 }
 
+const timeSlotTransactions = (unanalized_transactions, user) => {
+    unanalized_transactions.forEach(transaction => {
+        let time_slot = Math.floor(transaction.time / 1000 / 60 / 60 / 4)
+        user.average_transaction_times[time_slot]++
+    })
+}
+
+const handleCategories = (unanalized_transactions, user) => {
+    unanalized_transactions.forEach(transaction => {
+        user.categories[transaction.category] ? user.categories[transaction.category] = { number_of_transactions: 1 } : user.categories[transaction.category].number_of_transactions++
+    })
+}
+
+const handleNewIssuer = (unanalized_transactions, user) => {
+    unanalized_transactions.forEach(transaction => {
+        user.payment_issuers[transaction.issuer] ? user.payment_issuers[transaction.issuer] = { number_of_transactions: 1 } : user.payment_issuers[transaction.issuer].number_of_transactions++
+    })
+}
+
+const handleAveragePrice = (unanalized_transactions, user) => {
+    let last_ten_sum_price = unanalized_transactions.reduce((acc, transaction) => acc + transaction.price, 0)
+    user.average_price = (user.average_price + last_ten_sum_price) / (unanalized_transactions.length + 1)
+}
+
+const handleNewLocations = (unanalized_transactions, user) => {
+    // TODO: Implement location updater
+}
+
+
 // Cloud Function triggered on database changes
-exports.updateMedians = functions.firestore.document('transactions/{transactionId}')
-    .onWrite(async (change, context) => {
-        try {
-            // Get all documents from the 'transactions' collection
-            const snapshot = await db.collection('transactions').get();
-            // the transaction data is an array of objects, each object has a type, value, location, user_id, and product and more
-            // we need to extract all the types, locations, user_ids, and products from the data
-            
-            let locations = [], userid = [], products = [], currencies = [], categories = []
+const CronJobBaseHandler = async () => {
+    sleep(USER_PROFILE_UPDATER_INTERVAL)
+    try {
+        const transactions = Object.values(await getData('transactions'))
+        transactions.sort((a, b) => a.time - b.time)
+
+        const users = Object.values(await getData('users'))
 
 
-            // Extract all types present in the data
-            const groupSet = new Set();
-            snapshot.forEach(doc => {
-                // if the current location is not in the locations array, add it
-                if (!locations.includes(doc.data().location)) {
-                    locations.push(doc.data().location)
-                }
-                if (!userid.includes(doc.data().user_id)) {
-                    userid.push(doc.data().user_id)
-                }
-                if (!products.includes(doc.data().product)) {
-                    products.push(doc.data().product)
-                }
-                if (!currencies.includes(doc.data().currency)) {
-                    currencies.push(doc.data().currency)
-                }
-                if (!categories.includes(doc.data().category)) {
-                    categories.push(doc.data().category)
-                }
-                // const transactionData = doc.data();
-                // transactionData.forEach(item => {
-                //     groupSet.add(item.type);
-                // });
-            });
-            const types = Array.from(groupSet);
+        users.forEach(user => {
+            let all_user_transactions = transactions.filter(transaction => transaction.user_id === user.id)
+            let unanalized_transactions = all_user_transactions.filter(transaction => !transaction.analized)
+            handleNewLocations(unanalized_transactions, user)
+            handleAveragePrice(unanalized_transactions, user)
+            handleNewIssuer(unanalized_transactions, user)
+            handleCategories(unanalized_transactions, user)
+            timeSlotTransactions(unanalized_transactions, user)
+            handleUserAgents(unanalized_transactions, user)
+        })
+        return null;
+    } catch (error) {
+        console.error('Error updating medians:', error);
+        return null;
+    }
+}
 
-            // // Calculate median for each type
-            // const medians = {};
-            // types.forEach(type => {
-            //     const typeMedian = calculateMedianForType(snapshot.docs.map(doc => doc.data()), type);
-            //     medians[type] = typeMedian;
-            // });
+const TrainModel = async () => {
+    sleep(TRAIN_MODEL_INTERAVL)
+    const transactions = Object.values(await getData('transactions'))
+    const users = Object.values(await getData('users'))
+    const companies = Object.values(await getData('companies'))
 
-            // // Update the 'median_collection' with the calculated medians
-            // const batch = db.batch();
-            // Object.entries(medians).forEach(([type, median]) => {
-            //     const medianDocRef = db.collection('median_collection').doc(type);
-            //     batch.set(medianDocRef, { median: median });
-            // });
-            // await batch.commit();
+    const dump = {
+        companies: [...companies],
+        transactions: [...transactions],
+        users: [...users]
+    }
 
-            return null;
-        } catch (error) {
-            console.error('Error updating medians:', error);
-            return null;
-        }
-    });
+    const jsonData = JSON.stringify(dump, null, 4);
+
+    fs.writeFileSync('../logistical_regresion/database.json', jsonData);
+    train()
+}
+
+
+
+CronJobBaseHandler()
+TrainModel()
+
+/*
+TODO OPTIONAL: add dmp integration
+1. from phone we get id on ios (IDFA)/on andoid (IMEI), we already have phone id in user record
+2. load dmp data into user profile
+3. use dmp data on prediction model and initial detection logic
+*/

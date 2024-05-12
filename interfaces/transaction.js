@@ -12,7 +12,12 @@ class Transaction {
     this.product = transactionData.product;
     this.user_id = transactionData.user_id;
     this.time = transactionData.time;
+    //bollean
     this.fraud = transactionData.fraud;
+    //bollean
+    this.analized = transactionData.analized;
+    //identificator of a category of the merchent
+    this.category = transactionData.category;
   }
 }
 
