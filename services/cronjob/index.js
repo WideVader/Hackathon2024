@@ -1,13 +1,14 @@
 //branko here you can write cronnjob code
 
-const { initializeApp } = require("firebase-admin");
-const functions = require('firebase-functions');
-const { getData } = require("../../db/realTimeDatabase");
-const { train } = require('../logistical_regresion/index.js')
+//change imporrts to your ES module scope
+//import fs
+
+import fs from 'fs';
+
+import { getData } from "../../db/realTimeDatabase.js";
+import { train } from '../logistical_regresion/index.js';
 
 // Initialize Firebase Admin SDK
-const firebaseAdminApp = initializeApp();
-const db = firebaseAdminApp.firestore(); // Get a Firestore instance
 const USER_PROFILE_UPDATER_INTERVAL = 1000 * 60 * 10; // 10 minutes
 const TRAIN_MODEL_INTERAVL = 1000 * 60 * 60; //1h
 
@@ -54,16 +55,13 @@ const handleNewLocations = (unanalized_transactions, user) => {
 const CronJobBaseHandler = async () => {
     sleep(USER_PROFILE_UPDATER_INTERVAL)
     try {
-        const transactions = await db.collection('transactions').get();
+        const transactions = Object.values(await getData('transactions'))
         transactions.sort((a, b) => a.time - b.time)
 
-        const users = await db.collection('users').get();
+        const users = Object.values(await getData('users'))
 
 
         users.forEach(user => {
-            if (!usersChanges[user.id]) {
-                usersChanges[user.id] = {}
-            }
             let all_user_transactions = transactions.filter(transaction => transaction.user_id === user.id)
             let unanalized_transactions = all_user_transactions.filter(transaction => !transaction.analized)
             handleNewLocations(unanalized_transactions, user)
@@ -82,9 +80,9 @@ const CronJobBaseHandler = async () => {
 
 const TrainModel = async () => {
     sleep(TRAIN_MODEL_INTERAVL)
-    const transactions = await db.collection('transactions').get();
-    const users = await db.collection('users').get();
-    const companies = await db.collection('companies').get();
+    const transactions = Object.values(await getData('transactions'))
+    const users = Object.values(await getData('users'))
+    const companies = Object.values(await getData('companies'))
 
     const dump = {
         companies: [...companies],
