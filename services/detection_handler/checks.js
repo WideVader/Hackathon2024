@@ -13,7 +13,7 @@ const isBelowAverage = (all_data, new_value) => {
 
 
 const locationChecker = (company, transaction, user) => {
-    if (Math.abs(user.location_lang - location_lang) > 0.7 || Math.abs(user.location_lat - location_lat) > 0.7) {
+    if (Math.abs(user.longitude - transaction.t_longitude) > 0.7 || Math.abs(user.latitude - transaction.t_latitude) > 0.7) {
         return 0.2;
     }
     return 0
