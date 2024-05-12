@@ -1,5 +1,5 @@
 
-const checks = require('./checks.js');
+import checks  from './checks.js'
 //import predict
 import { predict } from '../logistical_regresion/index.js'
 
