@@ -1,6 +1,6 @@
 .cards {
   display: flex;
-  justify-content: space-around; /* Adjusted for better spacing */
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   width: 200px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   margin: 0 10px;
   flex: 1;
 }
@@ -47,14 +47,37 @@ html {
   box-sizing: border-box;
 }
 
-.safe.selected {
+.safe.selected,
+.safe.selected h2,
+.safe.selected p {
   border-color: rgb(48, 180, 0);
   box-shadow: 0 0 10px rgb(48, 180, 0);
+  background-color: rgb(48, 180, 0);
+  color: white;
 }
 
-.fradulant.selected {
+.fraudulent.selected,
+.fraudulent.selected h2,
+.fraudulent.selected p {
   border-color: rgb(222, 0, 0);
   box-shadow: 0 0 10px rgb(222, 0, 0);
+  background-color: rgb(222, 0, 0);
+  color: white;
+}
+
+.safe:hover {
+  background-color: rgb(48, 180, 0);
+  color: white;
+}
+
+.fraudulent:hover {
+  background-color: rgb(222, 0, 0);
+  color: white;
+}
+
+.card:hover h2,
+.card:hover p {
+  color: white;
 }
 
 .submit-button {
