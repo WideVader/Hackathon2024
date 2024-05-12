@@ -1,81 +1,64 @@
-form {
+.cards {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around; /* Adjusted for better spacing */
   align-items: center;
-  width: 30%;
-  margin: auto;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 0 10px;
+  flex: 1;
 }
 
-.radio-buttons {
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.radio-buttons label {
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.safe.selected {
+  border-color: rgb(48, 180, 0);
+  box-shadow: 0 0 10px rgb(48, 180, 0);
+}
+
+.fradulant.selected {
+  border-color: rgb(222, 0, 0);
+  box-shadow: 0 0 10px rgb(222, 0, 0);
+}
+
+.submit-button {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.material-symbols-outlined {
-  font-size: 20px;
-}
-
-.icon {
-  font-size: 40px;
-}
-
-input[type="radio"] {
-  transform: scale(1.5);
-  margin: 10px;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px; /* Center the tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+  justify-content: space-around;
 }

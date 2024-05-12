@@ -2,158 +2,67 @@ import React, { useState } from "react";
 import "./home.css";
 
 function Home() {
-  const [transactionData, setTransactionData] = useState({
-    id: "",
-    location: "",
-    user_agent: navigator.userAgent,
-    price: "",
-    currency: "",
-    weather: "Sunny", // Default weather option
-    category: "Electronics", // Default category option
-    issuer: "",
-    product: "",
-    user_id: "",
-    time: new Date().toISOString(),
-    fraud: false,
-  });
+  // State to track the selected fraud type
+  const [selectedFraudType, setSelectedFraudType] = useState(null);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setTransactionData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+  const handleSelectCard = (isFraud) => {
+    setSelectedFraudType(isFraud);
+    console.log(`Transaction is ${isFraud ? "fraudulent" : "not fraudulent"}`);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Transaction Data:", transactionData);
+  const handleSubmit = () => {
+    // You could add logic to send this data to a server here
+    console.log(
+      `Submitted as ${selectedFraudType ? "fraudulent" : "not fraudulent"}`
+    );
+    alert(
+      `Submitted as ${selectedFraudType ? "fraudulent" : "not fraudulent"}`
+    );
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <h1>Make a purchase</h1>
-        <input
-          type="text"
-          name="location"
-          value={transactionData.location}
-          onChange={handleChange}
-          placeholder="Location"
-        />
-        <input
-          type="number"
-          name="price"
-          value={transactionData.price}
-          onChange={handleChange}
-          placeholder="Price"
-        />
-        <input
-          type="text"
-          name="currency"
-          value={transactionData.currency}
-          onChange={handleChange}
-          placeholder="Currency"
-        />
-
-        <input
-          type="text"
-          name="issuer"
-          value={transactionData.issuer}
-          onChange={handleChange}
-          placeholder="Issuer"
-        />
-        <input
-          type="text"
-          name="product"
-          value={transactionData.product}
-          onChange={handleChange}
-          placeholder="Product"
-        />
-        <input
-          type="text"
-          name="user_id"
-          value={transactionData.user_id}
-          onChange={handleChange}
-          placeholder="User ID"
-        />
-        <div className="radio-buttons">
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="weather"
-              value="Sunny"
-              checked={transactionData.weather === "Sunny"}
-              onChange={handleChange}
-            />
-            <span className="material-symbols-outlined icon">sunny</span>
-            <span className="tooltiptext">Sunny</span>
-          </label>
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="weather"
-              value="Storm"
-              checked={transactionData.weather === "Storm"}
-              onChange={handleChange}
-            />
-            <span class="material-symbols-outlined icon">thunderstorm</span>
-            <span className="tooltiptext">Storm</span>
-          </label>
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="weather"
-              value="Rainy"
-              checked={transactionData.weather === "Rainy"}
-              onChange={handleChange}
-            />
-            <span className="material-symbols-outlined icon">rainy</span>
-            <span className="tooltiptext">Rainy</span>
-          </label>
+    <div>
+      <h1>Select a Transaction Type</h1>
+      <div className="cards">
+        <div
+          className={`safe card ${
+            selectedFraudType === false ? "selected" : ""
+          }`}
+          onClick={() => handleSelectCard(false)}
+        >
+          <h2>Non-Fraudulent Transaction</h2>
+          <p>Location: New York, USA</p>
+          <p>User age: 20</p>
+          <p>Price: $100</p>
+          <p>Currency: USD</p>
+          <p>Category: Electronics</p>
+          <p>Weather: Sunny</p>
         </div>
-
-        <div className="radio-buttons">
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="category"
-              value="Electronics"
-              checked={transactionData.category === "Electronics"}
-              onChange={handleChange}
-            />
-            <span class="material-symbols-outlined icon">electric_bolt</span>
-            <span className="tooltiptext">Electronics</span>
-          </label>
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="category"
-              value="Books"
-              checked={transactionData.category === "Books"}
-              onChange={handleChange}
-            />{" "}
-            <span class="material-symbols-outlined icon">menu_book</span>
-            <span className="tooltiptext">Books</span>
-          </label>
-          <label className="tooltip">
-            <input
-              type="radio"
-              name="category"
-              value="Apparel"
-              checked={transactionData.category === "Apparel"}
-              onChange={handleChange}
-            />
-            <span class="material-symbols-outlined icon">apparel</span>
-            <span className="tooltiptext">Clothing</span>
-          </label>
+        <div
+          className={`fradulant card ${
+            selectedFraudType === true ? "selected" : ""
+          }`}
+          onClick={() => handleSelectCard(true)}
+        >
+          <h2>Fraudulent Transaction</h2>
+          <p>Location: Paris, France</p>
+          <p>User age: 95</p>
+          <p>Price: $1500</p>
+          <p>Currency: EUR</p>
+          <p>Category: Luxury Goods</p>
+          <p>Weather: Stormy</p>
         </div>
-
-        <button className="default-button" type="submit">
+      </div>
+      <div className="submit-button">
+        <button
+          className="default-button"
+          onClick={handleSubmit}
+          disabled={selectedFraudType === null}
+        >
           Submit Transaction
         </button>
-      </form>
-    </>
+      </div>
+    </div>
   );
 }
 
