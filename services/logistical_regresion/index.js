@@ -47,13 +47,13 @@ export function train() {
 //     "currency": "USD",
 //     "segment": "Young Adult",
 // }]);
-// predict([{
-//     "age": 95,
-//     "price": 1500,
-//     "t_currency": "EUR",
-//     "issuer": "MasterCard",
-//     "product": "Luxury goods",
-//     "gender": "male",
-//     "currency": "EUR",
-//     "segment": "Senior",
-// }]);
+predict([{
+    "age": 95,
+    "price": 1500,
+    "t_currency": "EUR",
+    "issuer": "MasterCard",
+    "product": "Luxury goods",
+    "gender": "male",
+    "currency": "EUR",
+    "segment": "Senior",
+}]);

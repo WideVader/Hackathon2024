@@ -18,15 +18,18 @@ with open(pickle_file_path, 'rb') as handle:
 # Define the new data
 new_data = pd.json_normalize(json.loads(sys.argv[1]))
 
+fields = ["age", "price", "t_currency", "issuer", "product", "gender", "currency", "segment"]
+
 # Example preprocessing steps for new_data
 new_data['age'] = new_data['age'].astype(str)
 new_data['price'] = new_data['price'].astype(str)
+new_data2=new_data[fields]
 
 # Handle missing values
 new_data.fillna('unknown', inplace=True)
 
 # Make predictions on the new data
-fraud_probability = pipeline.predict_proba(new_data)[:, 1]
+fraud_probability = pipeline.predict_proba(new_data2)[:, 1]
 print("Probability of Fraud:", fraud_probability)
 
 # Set a threshold for classifying as fraudulent
