@@ -271,8 +271,8 @@
       "name": "EXOTERIC"
     }
   ],
-  "transactions": [
-    {
+  "transactions": {
+    "0": {
       "category": "Health",
       "fraud": false,
       "id": 244,
@@ -288,7 +288,7 @@
       "user_id": 5,
       "weather": "Cloudy"
     },
-    {
+    "1": {
       "category": "Electronics",
       "fraud": true,
       "id": 31,
@@ -304,7 +304,7 @@
       "user_id": 16,
       "weather": "Sunny"
     },
-    {
+    "2": {
       "category": "Health",
       "fraud": true,
       "id": 106,
@@ -320,7 +320,7 @@
       "user_id": 30,
       "weather": "Sunny"
     },
-    {
+    "3": {
       "category": "Health",
       "fraud": true,
       "id": 377,
@@ -336,7 +336,7 @@
       "user_id": 18,
       "weather": "Cloudy"
     },
-    {
+    "4": {
       "category": "Health",
       "fraud": false,
       "id": 189,
@@ -352,7 +352,7 @@
       "user_id": 15,
       "weather": "Snowy"
     },
-    {
+    "5": {
       "category": "Books",
       "fraud": true,
       "id": 1,
@@ -368,7 +368,7 @@
       "user_id": 5,
       "weather": "Snowy"
     },
-    {
+    "6": {
       "category": "Electronics",
       "fraud": true,
       "id": 262,
@@ -384,7 +384,7 @@
       "user_id": 4,
       "weather": "Snowy"
     },
-    {
+    "7": {
       "category": "Books",
       "fraud": true,
       "id": 315,
@@ -400,7 +400,7 @@
       "user_id": 21,
       "weather": "Snowy"
     },
-    {
+    "8": {
       "category": "Books",
       "fraud": true,
       "id": 262,
@@ -416,7 +416,7 @@
       "user_id": 30,
       "weather": "Rainy"
     },
-    {
+    "9": {
       "category": "Books",
       "fraud": false,
       "id": 336,
@@ -432,7 +432,7 @@
       "user_id": 28,
       "weather": "Cloudy"
     },
-    {
+    "10": {
       "category": "Electronics",
       "fraud": true,
       "id": 320,
@@ -448,7 +448,7 @@
       "user_id": 30,
       "weather": "Sunny"
     },
-    {
+    "11": {
       "category": "Electronics",
       "fraud": false,
       "id": 287,
@@ -464,7 +464,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "12": {
       "category": "Apparel",
       "fraud": true,
       "id": 59,
@@ -480,7 +480,7 @@
       "user_id": 7,
       "weather": "Sunny"
     },
-    {
+    "13": {
       "category": "Electronics",
       "fraud": false,
       "id": 166,
@@ -496,7 +496,7 @@
       "user_id": 5,
       "weather": "Snowy"
     },
-    {
+    "14": {
       "category": "Books",
       "fraud": true,
       "id": 355,
@@ -512,7 +512,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "15": {
       "category": "Apparel",
       "fraud": true,
       "id": 184,
@@ -528,7 +528,7 @@
       "user_id": 26,
       "weather": "Rainy"
     },
-    {
+    "16": {
       "category": "Health",
       "fraud": true,
       "id": 85,
@@ -544,7 +544,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "17": {
       "category": "Books",
       "fraud": false,
       "id": 261,
@@ -560,7 +560,7 @@
       "user_id": 1,
       "weather": "Snowy"
     },
-    {
+    "18": {
       "category": "Health",
       "fraud": false,
       "id": 302,
@@ -576,7 +576,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "19": {
       "category": "Apparel",
       "fraud": false,
       "id": 307,
@@ -592,7 +592,7 @@
       "user_id": 26,
       "weather": "Cloudy"
     },
-    {
+    "20": {
       "category": "Electronics",
       "fraud": true,
       "id": 347,
@@ -608,7 +608,7 @@
       "user_id": 5,
       "weather": "Cloudy"
     },
-    {
+    "21": {
       "category": "Electronics",
       "fraud": true,
       "id": 63,
@@ -624,7 +624,7 @@
       "user_id": 3,
       "weather": "Sunny"
     },
-    {
+    "22": {
       "category": "Electronics",
       "fraud": true,
       "id": 60,
@@ -640,7 +640,7 @@
       "user_id": 16,
       "weather": "Cloudy"
     },
-    {
+    "23": {
       "category": "Books",
       "fraud": false,
       "id": 74,
@@ -656,7 +656,7 @@
       "user_id": 23,
       "weather": "Rainy"
     },
-    {
+    "24": {
       "category": "Apparel",
       "fraud": true,
       "id": 66,
@@ -672,7 +672,7 @@
       "user_id": 6,
       "weather": "Rainy"
     },
-    {
+    "25": {
       "category": "Books",
       "fraud": false,
       "id": 71,
@@ -688,7 +688,7 @@
       "user_id": 15,
       "weather": "Cloudy"
     },
-    {
+    "26": {
       "category": "Health",
       "fraud": true,
       "id": 362,
@@ -704,7 +704,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "27": {
       "category": "Apparel",
       "fraud": false,
       "id": 397,
@@ -720,7 +720,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "28": {
       "category": "Health",
       "fraud": true,
       "id": 17,
@@ -736,7 +736,7 @@
       "user_id": 29,
       "weather": "Cloudy"
     },
-    {
+    "29": {
       "category": "Electronics",
       "fraud": false,
       "id": 269,
@@ -752,7 +752,7 @@
       "user_id": 22,
       "weather": "Sunny"
     },
-    {
+    "30": {
       "category": "Books",
       "fraud": false,
       "id": 54,
@@ -768,7 +768,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "31": {
       "category": "Apparel",
       "fraud": true,
       "id": 211,
@@ -784,7 +784,7 @@
       "user_id": 20,
       "weather": "Sunny"
     },
-    {
+    "32": {
       "category": "Electronics",
       "fraud": true,
       "id": 90,
@@ -800,7 +800,7 @@
       "user_id": 16,
       "weather": "Sunny"
     },
-    {
+    "33": {
       "category": "Health",
       "fraud": true,
       "id": 219,
@@ -816,7 +816,7 @@
       "user_id": 30,
       "weather": "Snowy"
     },
-    {
+    "34": {
       "category": "Books",
       "fraud": true,
       "id": 237,
@@ -832,7 +832,7 @@
       "user_id": 7,
       "weather": "Sunny"
     },
-    {
+    "35": {
       "category": "Apparel",
       "fraud": true,
       "id": 150,
@@ -848,7 +848,7 @@
       "user_id": 26,
       "weather": "Rainy"
     },
-    {
+    "36": {
       "category": "Electronics",
       "fraud": true,
       "id": 255,
@@ -864,7 +864,7 @@
       "user_id": 27,
       "weather": "Sunny"
     },
-    {
+    "37": {
       "category": "Apparel",
       "fraud": true,
       "id": 78,
@@ -880,7 +880,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "38": {
       "category": "Electronics",
       "fraud": true,
       "id": 142,
@@ -896,7 +896,7 @@
       "user_id": 14,
       "weather": "Rainy"
     },
-    {
+    "39": {
       "category": "Books",
       "fraud": false,
       "id": 329,
@@ -912,7 +912,7 @@
       "user_id": 2,
       "weather": "Rainy"
     },
-    {
+    "40": {
       "category": "Books",
       "fraud": true,
       "id": 146,
@@ -928,7 +928,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "41": {
       "category": "Electronics",
       "fraud": true,
       "id": 342,
@@ -944,7 +944,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "42": {
       "category": "Health",
       "fraud": true,
       "id": 94,
@@ -960,7 +960,7 @@
       "user_id": 23,
       "weather": "Cloudy"
     },
-    {
+    "43": {
       "category": "Health",
       "fraud": true,
       "id": 1,
@@ -976,7 +976,7 @@
       "user_id": 5,
       "weather": "Cloudy"
     },
-    {
+    "44": {
       "category": "Electronics",
       "fraud": true,
       "id": 206,
@@ -992,7 +992,7 @@
       "user_id": 4,
       "weather": "Cloudy"
     },
-    {
+    "45": {
       "category": "Books",
       "fraud": true,
       "id": 279,
@@ -1008,7 +1008,7 @@
       "user_id": 12,
       "weather": "Rainy"
     },
-    {
+    "46": {
       "category": "Books",
       "fraud": false,
       "id": 331,
@@ -1024,7 +1024,7 @@
       "user_id": 4,
       "weather": "Snowy"
     },
-    {
+    "47": {
       "category": "Apparel",
       "fraud": true,
       "id": 166,
@@ -1040,7 +1040,7 @@
       "user_id": 1,
       "weather": "Rainy"
     },
-    {
+    "48": {
       "category": "Apparel",
       "fraud": true,
       "id": 143,
@@ -1056,7 +1056,7 @@
       "user_id": 1,
       "weather": "Snowy"
     },
-    {
+    "49": {
       "category": "Health",
       "fraud": true,
       "id": 349,
@@ -1072,7 +1072,7 @@
       "user_id": 11,
       "weather": "Sunny"
     },
-    {
+    "50": {
       "category": "Apparel",
       "fraud": true,
       "id": 371,
@@ -1088,7 +1088,7 @@
       "user_id": 18,
       "weather": "Sunny"
     },
-    {
+    "51": {
       "category": "Electronics",
       "fraud": true,
       "id": 230,
@@ -1104,7 +1104,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "52": {
       "category": "Apparel",
       "fraud": true,
       "id": 304,
@@ -1120,7 +1120,7 @@
       "user_id": 22,
       "weather": "Sunny"
     },
-    {
+    "53": {
       "category": "Health",
       "fraud": true,
       "id": 129,
@@ -1136,7 +1136,7 @@
       "user_id": 3,
       "weather": "Sunny"
     },
-    {
+    "54": {
       "category": "Health",
       "fraud": false,
       "id": 354,
@@ -1152,7 +1152,7 @@
       "user_id": 24,
       "weather": "Sunny"
     },
-    {
+    "55": {
       "category": "Apparel",
       "fraud": true,
       "id": 137,
@@ -1168,7 +1168,7 @@
       "user_id": 1,
       "weather": "Snowy"
     },
-    {
+    "56": {
       "category": "Health",
       "fraud": false,
       "id": 19,
@@ -1184,7 +1184,7 @@
       "user_id": 4,
       "weather": "Sunny"
     },
-    {
+    "57": {
       "category": "Books",
       "fraud": true,
       "id": 340,
@@ -1200,7 +1200,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "58": {
       "category": "Health",
       "fraud": true,
       "id": 155,
@@ -1216,7 +1216,7 @@
       "user_id": 11,
       "weather": "Snowy"
     },
-    {
+    "59": {
       "category": "Electronics",
       "fraud": false,
       "id": 266,
@@ -1232,7 +1232,7 @@
       "user_id": 21,
       "weather": "Cloudy"
     },
-    {
+    "60": {
       "category": "Health",
       "fraud": false,
       "id": 296,
@@ -1248,7 +1248,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "61": {
       "category": "Electronics",
       "fraud": true,
       "id": 119,
@@ -1264,7 +1264,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "62": {
       "category": "Books",
       "fraud": true,
       "id": 76,
@@ -1280,7 +1280,7 @@
       "user_id": 7,
       "weather": "Snowy"
     },
-    {
+    "63": {
       "category": "Health",
       "fraud": true,
       "id": 131,
@@ -1296,7 +1296,7 @@
       "user_id": 14,
       "weather": "Snowy"
     },
-    {
+    "64": {
       "category": "Health",
       "fraud": true,
       "id": 354,
@@ -1312,7 +1312,7 @@
       "user_id": 1,
       "weather": "Cloudy"
     },
-    {
+    "65": {
       "category": "Apparel",
       "fraud": false,
       "id": 115,
@@ -1328,7 +1328,7 @@
       "user_id": 14,
       "weather": "Rainy"
     },
-    {
+    "66": {
       "category": "Electronics",
       "fraud": false,
       "id": 65,
@@ -1344,7 +1344,7 @@
       "user_id": 16,
       "weather": "Rainy"
     },
-    {
+    "67": {
       "category": "Health",
       "fraud": true,
       "id": 313,
@@ -1360,7 +1360,7 @@
       "user_id": 28,
       "weather": "Cloudy"
     },
-    {
+    "68": {
       "category": "Books",
       "fraud": true,
       "id": 81,
@@ -1376,7 +1376,7 @@
       "user_id": 2,
       "weather": "Rainy"
     },
-    {
+    "69": {
       "category": "Books",
       "fraud": true,
       "id": 195,
@@ -1392,7 +1392,7 @@
       "user_id": 7,
       "weather": "Rainy"
     },
-    {
+    "70": {
       "category": "Apparel",
       "fraud": true,
       "id": 227,
@@ -1408,7 +1408,7 @@
       "user_id": 10,
       "weather": "Rainy"
     },
-    {
+    "71": {
       "category": "Electronics",
       "fraud": false,
       "id": 387,
@@ -1424,7 +1424,7 @@
       "user_id": 10,
       "weather": "Cloudy"
     },
-    {
+    "72": {
       "category": "Health",
       "fraud": true,
       "id": 82,
@@ -1440,7 +1440,7 @@
       "user_id": 17,
       "weather": "Cloudy"
     },
-    {
+    "73": {
       "category": "Apparel",
       "fraud": true,
       "id": 74,
@@ -1456,7 +1456,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "74": {
       "category": "Electronics",
       "fraud": false,
       "id": 322,
@@ -1472,7 +1472,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "75": {
       "category": "Apparel",
       "fraud": true,
       "id": 320,
@@ -1488,7 +1488,7 @@
       "user_id": 16,
       "weather": "Cloudy"
     },
-    {
+    "76": {
       "category": "Health",
       "fraud": false,
       "id": 142,
@@ -1504,7 +1504,7 @@
       "user_id": 16,
       "weather": "Snowy"
     },
-    {
+    "77": {
       "category": "Apparel",
       "fraud": true,
       "id": 126,
@@ -1520,7 +1520,7 @@
       "user_id": 14,
       "weather": "Sunny"
     },
-    {
+    "78": {
       "category": "Health",
       "fraud": false,
       "id": 367,
@@ -1536,7 +1536,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "79": {
       "category": "Books",
       "fraud": false,
       "id": 182,
@@ -1552,7 +1552,7 @@
       "user_id": 29,
       "weather": "Cloudy"
     },
-    {
+    "80": {
       "category": "Books",
       "fraud": false,
       "id": 83,
@@ -1568,7 +1568,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "81": {
       "category": "Apparel",
       "fraud": false,
       "id": 139,
@@ -1584,7 +1584,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "82": {
       "category": "Electronics",
       "fraud": true,
       "id": 325,
@@ -1600,7 +1600,7 @@
       "user_id": 17,
       "weather": "Rainy"
     },
-    {
+    "83": {
       "category": "Books",
       "fraud": true,
       "id": 293,
@@ -1616,7 +1616,7 @@
       "user_id": 16,
       "weather": "Snowy"
     },
-    {
+    "84": {
       "category": "Health",
       "fraud": true,
       "id": 186,
@@ -1632,7 +1632,7 @@
       "user_id": 30,
       "weather": "Cloudy"
     },
-    {
+    "85": {
       "category": "Books",
       "fraud": true,
       "id": 309,
@@ -1648,7 +1648,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "86": {
       "category": "Books",
       "fraud": true,
       "id": 22,
@@ -1664,7 +1664,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "87": {
       "category": "Health",
       "fraud": false,
       "id": 337,
@@ -1680,7 +1680,7 @@
       "user_id": 4,
       "weather": "Rainy"
     },
-    {
+    "88": {
       "category": "Health",
       "fraud": true,
       "id": 261,
@@ -1696,7 +1696,7 @@
       "user_id": 18,
       "weather": "Rainy"
     },
-    {
+    "89": {
       "category": "Books",
       "fraud": true,
       "id": 46,
@@ -1712,7 +1712,7 @@
       "user_id": 10,
       "weather": "Rainy"
     },
-    {
+    "90": {
       "category": "Electronics",
       "fraud": true,
       "id": 374,
@@ -1728,7 +1728,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "91": {
       "category": "Health",
       "fraud": true,
       "id": 11,
@@ -1744,7 +1744,7 @@
       "user_id": 17,
       "weather": "Sunny"
     },
-    {
+    "92": {
       "category": "Electronics",
       "fraud": false,
       "id": 360,
@@ -1760,7 +1760,7 @@
       "user_id": 24,
       "weather": "Sunny"
     },
-    {
+    "93": {
       "category": "Electronics",
       "fraud": true,
       "id": 126,
@@ -1776,7 +1776,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "94": {
       "category": "Health",
       "fraud": true,
       "id": 49,
@@ -1792,7 +1792,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "95": {
       "category": "Electronics",
       "fraud": false,
       "id": 319,
@@ -1808,7 +1808,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "96": {
       "category": "Apparel",
       "fraud": false,
       "id": 185,
@@ -1824,7 +1824,7 @@
       "user_id": 21,
       "weather": "Sunny"
     },
-    {
+    "97": {
       "category": "Health",
       "fraud": true,
       "id": 189,
@@ -1840,7 +1840,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "98": {
       "category": "Electronics",
       "fraud": false,
       "id": 231,
@@ -1856,7 +1856,7 @@
       "user_id": 11,
       "weather": "Cloudy"
     },
-    {
+    "99": {
       "category": "Electronics",
       "fraud": true,
       "id": 84,
@@ -1872,7 +1872,7 @@
       "user_id": 1,
       "weather": "Snowy"
     },
-    {
+    "100": {
       "category": "Health",
       "fraud": true,
       "id": 121,
@@ -1888,7 +1888,7 @@
       "user_id": 4,
       "weather": "Sunny"
     },
-    {
+    "101": {
       "category": "Books",
       "fraud": true,
       "id": 95,
@@ -1904,7 +1904,7 @@
       "user_id": 4,
       "weather": "Snowy"
     },
-    {
+    "102": {
       "category": "Books",
       "fraud": true,
       "id": 194,
@@ -1920,7 +1920,7 @@
       "user_id": 14,
       "weather": "Sunny"
     },
-    {
+    "103": {
       "category": "Books",
       "fraud": false,
       "id": 287,
@@ -1936,7 +1936,7 @@
       "user_id": 22,
       "weather": "Sunny"
     },
-    {
+    "104": {
       "category": "Health",
       "fraud": false,
       "id": 246,
@@ -1952,7 +1952,7 @@
       "user_id": 4,
       "weather": "Sunny"
     },
-    {
+    "105": {
       "category": "Health",
       "fraud": false,
       "id": 80,
@@ -1968,7 +1968,7 @@
       "user_id": 29,
       "weather": "Cloudy"
     },
-    {
+    "106": {
       "category": "Apparel",
       "fraud": false,
       "id": 129,
@@ -1984,7 +1984,7 @@
       "user_id": 12,
       "weather": "Rainy"
     },
-    {
+    "107": {
       "category": "Electronics",
       "fraud": true,
       "id": 243,
@@ -2000,7 +2000,7 @@
       "user_id": 1,
       "weather": "Sunny"
     },
-    {
+    "108": {
       "category": "Apparel",
       "fraud": true,
       "id": 343,
@@ -2016,7 +2016,7 @@
       "user_id": 1,
       "weather": "Cloudy"
     },
-    {
+    "109": {
       "category": "Books",
       "fraud": true,
       "id": 35,
@@ -2032,7 +2032,7 @@
       "user_id": 8,
       "weather": "Cloudy"
     },
-    {
+    "110": {
       "category": "Books",
       "fraud": false,
       "id": 305,
@@ -2048,7 +2048,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "111": {
       "category": "Health",
       "fraud": true,
       "id": 285,
@@ -2064,7 +2064,7 @@
       "user_id": 18,
       "weather": "Sunny"
     },
-    {
+    "112": {
       "category": "Apparel",
       "fraud": true,
       "id": 367,
@@ -2080,7 +2080,7 @@
       "user_id": 1,
       "weather": "Rainy"
     },
-    {
+    "113": {
       "category": "Health",
       "fraud": false,
       "id": 124,
@@ -2096,7 +2096,7 @@
       "user_id": 22,
       "weather": "Snowy"
     },
-    {
+    "114": {
       "category": "Books",
       "fraud": true,
       "id": 12,
@@ -2112,7 +2112,7 @@
       "user_id": 28,
       "weather": "Sunny"
     },
-    {
+    "115": {
       "category": "Apparel",
       "fraud": false,
       "id": 181,
@@ -2128,7 +2128,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "116": {
       "category": "Books",
       "fraud": false,
       "id": 152,
@@ -2144,7 +2144,7 @@
       "user_id": 13,
       "weather": "Cloudy"
     },
-    {
+    "117": {
       "category": "Books",
       "fraud": true,
       "id": 184,
@@ -2160,7 +2160,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "118": {
       "category": "Books",
       "fraud": false,
       "id": 80,
@@ -2176,7 +2176,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "119": {
       "category": "Electronics",
       "fraud": true,
       "id": 132,
@@ -2192,7 +2192,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "120": {
       "category": "Books",
       "fraud": true,
       "id": 282,
@@ -2208,7 +2208,7 @@
       "user_id": 13,
       "weather": "Snowy"
     },
-    {
+    "121": {
       "category": "Electronics",
       "fraud": true,
       "id": 17,
@@ -2224,7 +2224,7 @@
       "user_id": 11,
       "weather": "Cloudy"
     },
-    {
+    "122": {
       "category": "Electronics",
       "fraud": true,
       "id": 296,
@@ -2240,7 +2240,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "123": {
       "category": "Apparel",
       "fraud": true,
       "id": 159,
@@ -2256,7 +2256,7 @@
       "user_id": 26,
       "weather": "Rainy"
     },
-    {
+    "124": {
       "category": "Apparel",
       "fraud": false,
       "id": 206,
@@ -2272,7 +2272,7 @@
       "user_id": 9,
       "weather": "Cloudy"
     },
-    {
+    "125": {
       "category": "Electronics",
       "fraud": false,
       "id": 138,
@@ -2288,7 +2288,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "126": {
       "category": "Health",
       "fraud": true,
       "id": 277,
@@ -2304,7 +2304,7 @@
       "user_id": 18,
       "weather": "Rainy"
     },
-    {
+    "127": {
       "category": "Electronics",
       "fraud": true,
       "id": 387,
@@ -2320,7 +2320,7 @@
       "user_id": 21,
       "weather": "Cloudy"
     },
-    {
+    "128": {
       "category": "Apparel",
       "fraud": true,
       "id": 115,
@@ -2336,7 +2336,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "129": {
       "category": "Electronics",
       "fraud": false,
       "id": 242,
@@ -2352,7 +2352,7 @@
       "user_id": 25,
       "weather": "Rainy"
     },
-    {
+    "130": {
       "category": "Health",
       "fraud": true,
       "id": 304,
@@ -2368,7 +2368,7 @@
       "user_id": 7,
       "weather": "Cloudy"
     },
-    {
+    "131": {
       "category": "Apparel",
       "fraud": true,
       "id": 99,
@@ -2384,7 +2384,7 @@
       "user_id": 5,
       "weather": "Rainy"
     },
-    {
+    "132": {
       "category": "Books",
       "fraud": false,
       "id": 386,
@@ -2400,7 +2400,7 @@
       "user_id": 14,
       "weather": "Rainy"
     },
-    {
+    "133": {
       "category": "Books",
       "fraud": true,
       "id": 342,
@@ -2416,7 +2416,7 @@
       "user_id": 18,
       "weather": "Rainy"
     },
-    {
+    "134": {
       "category": "Apparel",
       "fraud": true,
       "id": 292,
@@ -2432,7 +2432,7 @@
       "user_id": 23,
       "weather": "Rainy"
     },
-    {
+    "135": {
       "category": "Health",
       "fraud": false,
       "id": 24,
@@ -2448,7 +2448,7 @@
       "user_id": 23,
       "weather": "Cloudy"
     },
-    {
+    "136": {
       "category": "Health",
       "fraud": true,
       "id": 135,
@@ -2464,7 +2464,7 @@
       "user_id": 14,
       "weather": "Sunny"
     },
-    {
+    "137": {
       "category": "Books",
       "fraud": false,
       "id": 162,
@@ -2480,7 +2480,7 @@
       "user_id": 17,
       "weather": "Rainy"
     },
-    {
+    "138": {
       "category": "Apparel",
       "fraud": true,
       "id": 247,
@@ -2496,7 +2496,7 @@
       "user_id": 19,
       "weather": "Sunny"
     },
-    {
+    "139": {
       "category": "Books",
       "fraud": true,
       "id": 71,
@@ -2512,7 +2512,7 @@
       "user_id": 6,
       "weather": "Snowy"
     },
-    {
+    "140": {
       "category": "Apparel",
       "fraud": false,
       "id": 350,
@@ -2528,7 +2528,7 @@
       "user_id": 6,
       "weather": "Snowy"
     },
-    {
+    "141": {
       "category": "Health",
       "fraud": false,
       "id": 65,
@@ -2544,7 +2544,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "142": {
       "category": "Books",
       "fraud": false,
       "id": 350,
@@ -2560,7 +2560,7 @@
       "user_id": 9,
       "weather": "Cloudy"
     },
-    {
+    "143": {
       "category": "Books",
       "fraud": false,
       "id": 82,
@@ -2576,7 +2576,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "144": {
       "category": "Books",
       "fraud": true,
       "id": 258,
@@ -2592,7 +2592,7 @@
       "user_id": 14,
       "weather": "Cloudy"
     },
-    {
+    "145": {
       "category": "Apparel",
       "fraud": false,
       "id": 141,
@@ -2608,7 +2608,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "146": {
       "category": "Apparel",
       "fraud": true,
       "id": 179,
@@ -2624,7 +2624,7 @@
       "user_id": 2,
       "weather": "Cloudy"
     },
-    {
+    "147": {
       "category": "Books",
       "fraud": false,
       "id": 358,
@@ -2640,7 +2640,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "148": {
       "category": "Electronics",
       "fraud": true,
       "id": 148,
@@ -2656,7 +2656,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "149": {
       "category": "Books",
       "fraud": true,
       "id": 231,
@@ -2672,7 +2672,7 @@
       "user_id": 3,
       "weather": "Rainy"
     },
-    {
+    "150": {
       "category": "Health",
       "fraud": false,
       "id": 108,
@@ -2688,7 +2688,7 @@
       "user_id": 6,
       "weather": "Cloudy"
     },
-    {
+    "151": {
       "category": "Books",
       "fraud": false,
       "id": 24,
@@ -2704,7 +2704,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "152": {
       "category": "Health",
       "fraud": false,
       "id": 164,
@@ -2720,7 +2720,7 @@
       "user_id": 28,
       "weather": "Snowy"
     },
-    {
+    "153": {
       "category": "Apparel",
       "fraud": true,
       "id": 84,
@@ -2736,7 +2736,7 @@
       "user_id": 9,
       "weather": "Rainy"
     },
-    {
+    "154": {
       "category": "Apparel",
       "fraud": true,
       "id": 111,
@@ -2752,7 +2752,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "155": {
       "category": "Books",
       "fraud": true,
       "id": 307,
@@ -2768,7 +2768,7 @@
       "user_id": 21,
       "weather": "Cloudy"
     },
-    {
+    "156": {
       "category": "Apparel",
       "fraud": true,
       "id": 10,
@@ -2784,7 +2784,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "157": {
       "category": "Books",
       "fraud": false,
       "id": 224,
@@ -2800,7 +2800,7 @@
       "user_id": 5,
       "weather": "Cloudy"
     },
-    {
+    "158": {
       "category": "Apparel",
       "fraud": false,
       "id": 310,
@@ -2816,7 +2816,7 @@
       "user_id": 13,
       "weather": "Sunny"
     },
-    {
+    "159": {
       "category": "Apparel",
       "fraud": true,
       "id": 317,
@@ -2832,7 +2832,7 @@
       "user_id": 21,
       "weather": "Snowy"
     },
-    {
+    "160": {
       "category": "Apparel",
       "fraud": true,
       "id": 357,
@@ -2848,7 +2848,7 @@
       "user_id": 3,
       "weather": "Rainy"
     },
-    {
+    "161": {
       "category": "Books",
       "fraud": false,
       "id": 131,
@@ -2864,7 +2864,7 @@
       "user_id": 25,
       "weather": "Sunny"
     },
-    {
+    "162": {
       "category": "Health",
       "fraud": true,
       "id": 162,
@@ -2880,7 +2880,7 @@
       "user_id": 10,
       "weather": "Cloudy"
     },
-    {
+    "163": {
       "category": "Apparel",
       "fraud": true,
       "id": 137,
@@ -2896,7 +2896,7 @@
       "user_id": 25,
       "weather": "Sunny"
     },
-    {
+    "164": {
       "category": "Health",
       "fraud": false,
       "id": 281,
@@ -2912,7 +2912,7 @@
       "user_id": 14,
       "weather": "Cloudy"
     },
-    {
+    "165": {
       "category": "Health",
       "fraud": false,
       "id": 221,
@@ -2928,7 +2928,7 @@
       "user_id": 23,
       "weather": "Sunny"
     },
-    {
+    "166": {
       "category": "Books",
       "fraud": false,
       "id": 387,
@@ -2944,7 +2944,7 @@
       "user_id": 26,
       "weather": "Sunny"
     },
-    {
+    "167": {
       "category": "Health",
       "fraud": true,
       "id": 273,
@@ -2960,7 +2960,7 @@
       "user_id": 4,
       "weather": "Sunny"
     },
-    {
+    "168": {
       "category": "Books",
       "fraud": true,
       "id": 72,
@@ -2976,7 +2976,7 @@
       "user_id": 20,
       "weather": "Snowy"
     },
-    {
+    "169": {
       "category": "Electronics",
       "fraud": true,
       "id": 184,
@@ -2992,7 +2992,7 @@
       "user_id": 29,
       "weather": "Rainy"
     },
-    {
+    "170": {
       "category": "Apparel",
       "fraud": true,
       "id": 323,
@@ -3008,7 +3008,7 @@
       "user_id": 22,
       "weather": "Rainy"
     },
-    {
+    "171": {
       "category": "Electronics",
       "fraud": false,
       "id": 59,
@@ -3024,7 +3024,7 @@
       "user_id": 2,
       "weather": "Sunny"
     },
-    {
+    "172": {
       "category": "Books",
       "fraud": true,
       "id": 58,
@@ -3040,7 +3040,7 @@
       "user_id": 19,
       "weather": "Rainy"
     },
-    {
+    "173": {
       "category": "Books",
       "fraud": true,
       "id": 71,
@@ -3056,7 +3056,7 @@
       "user_id": 21,
       "weather": "Rainy"
     },
-    {
+    "174": {
       "category": "Books",
       "fraud": true,
       "id": 223,
@@ -3072,7 +3072,7 @@
       "user_id": 13,
       "weather": "Sunny"
     },
-    {
+    "175": {
       "category": "Apparel",
       "fraud": false,
       "id": 25,
@@ -3088,7 +3088,7 @@
       "user_id": 4,
       "weather": "Sunny"
     },
-    {
+    "176": {
       "category": "Electronics",
       "fraud": true,
       "id": 225,
@@ -3104,7 +3104,7 @@
       "user_id": 6,
       "weather": "Rainy"
     },
-    {
+    "177": {
       "category": "Electronics",
       "fraud": true,
       "id": 364,
@@ -3120,7 +3120,7 @@
       "user_id": 4,
       "weather": "Cloudy"
     },
-    {
+    "178": {
       "category": "Electronics",
       "fraud": false,
       "id": 69,
@@ -3136,7 +3136,7 @@
       "user_id": 9,
       "weather": "Snowy"
     },
-    {
+    "179": {
       "category": "Books",
       "fraud": true,
       "id": 244,
@@ -3152,7 +3152,7 @@
       "user_id": 17,
       "weather": "Rainy"
     },
-    {
+    "180": {
       "category": "Apparel",
       "fraud": false,
       "id": 272,
@@ -3168,7 +3168,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "181": {
       "category": "Books",
       "fraud": true,
       "id": 191,
@@ -3184,7 +3184,7 @@
       "user_id": 17,
       "weather": "Rainy"
     },
-    {
+    "182": {
       "category": "Electronics",
       "fraud": true,
       "id": 99,
@@ -3200,7 +3200,7 @@
       "user_id": 15,
       "weather": "Snowy"
     },
-    {
+    "183": {
       "category": "Health",
       "fraud": true,
       "id": 51,
@@ -3216,7 +3216,7 @@
       "user_id": 6,
       "weather": "Cloudy"
     },
-    {
+    "184": {
       "category": "Books",
       "fraud": true,
       "id": 198,
@@ -3232,7 +3232,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "185": {
       "category": "Books",
       "fraud": true,
       "id": 232,
@@ -3248,7 +3248,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "186": {
       "category": "Health",
       "fraud": false,
       "id": 393,
@@ -3264,7 +3264,7 @@
       "user_id": 9,
       "weather": "Rainy"
     },
-    {
+    "187": {
       "category": "Health",
       "fraud": true,
       "id": 207,
@@ -3280,7 +3280,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "188": {
       "category": "Apparel",
       "fraud": true,
       "id": 89,
@@ -3296,7 +3296,7 @@
       "user_id": 9,
       "weather": "Rainy"
     },
-    {
+    "189": {
       "category": "Health",
       "fraud": true,
       "id": 57,
@@ -3312,7 +3312,7 @@
       "user_id": 16,
       "weather": "Snowy"
     },
-    {
+    "190": {
       "category": "Health",
       "fraud": false,
       "id": 119,
@@ -3328,7 +3328,7 @@
       "user_id": 20,
       "weather": "Rainy"
     },
-    {
+    "191": {
       "category": "Books",
       "fraud": false,
       "id": 11,
@@ -3344,7 +3344,7 @@
       "user_id": 26,
       "weather": "Sunny"
     },
-    {
+    "192": {
       "category": "Books",
       "fraud": false,
       "id": 82,
@@ -3360,7 +3360,7 @@
       "user_id": 11,
       "weather": "Rainy"
     },
-    {
+    "193": {
       "category": "Electronics",
       "fraud": true,
       "id": 110,
@@ -3376,7 +3376,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "194": {
       "category": "Apparel",
       "fraud": false,
       "id": 365,
@@ -3392,7 +3392,7 @@
       "user_id": 22,
       "weather": "Snowy"
     },
-    {
+    "195": {
       "category": "Electronics",
       "fraud": false,
       "id": 347,
@@ -3408,7 +3408,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "196": {
       "category": "Electronics",
       "fraud": true,
       "id": 140,
@@ -3424,7 +3424,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "197": {
       "category": "Books",
       "fraud": false,
       "id": 316,
@@ -3440,7 +3440,7 @@
       "user_id": 14,
       "weather": "Snowy"
     },
-    {
+    "198": {
       "category": "Health",
       "fraud": true,
       "id": 286,
@@ -3456,7 +3456,7 @@
       "user_id": 14,
       "weather": "Sunny"
     },
-    {
+    "199": {
       "category": "Health",
       "fraud": true,
       "id": 6,
@@ -3472,7 +3472,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "200": {
       "category": "Health",
       "fraud": true,
       "id": 95,
@@ -3488,7 +3488,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "201": {
       "category": "Books",
       "fraud": false,
       "id": 35,
@@ -3504,7 +3504,7 @@
       "user_id": 10,
       "weather": "Rainy"
     },
-    {
+    "202": {
       "category": "Apparel",
       "fraud": true,
       "id": 220,
@@ -3520,7 +3520,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "203": {
       "category": "Apparel",
       "fraud": true,
       "id": 13,
@@ -3536,7 +3536,7 @@
       "user_id": 25,
       "weather": "Sunny"
     },
-    {
+    "204": {
       "category": "Health",
       "fraud": false,
       "id": 215,
@@ -3552,7 +3552,7 @@
       "user_id": 13,
       "weather": "Sunny"
     },
-    {
+    "205": {
       "category": "Apparel",
       "fraud": true,
       "id": 225,
@@ -3568,7 +3568,7 @@
       "user_id": 29,
       "weather": "Cloudy"
     },
-    {
+    "206": {
       "category": "Health",
       "fraud": true,
       "id": 228,
@@ -3584,7 +3584,7 @@
       "user_id": 7,
       "weather": "Cloudy"
     },
-    {
+    "207": {
       "category": "Electronics",
       "fraud": true,
       "id": 180,
@@ -3600,7 +3600,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "208": {
       "category": "Electronics",
       "fraud": true,
       "id": 330,
@@ -3616,7 +3616,7 @@
       "user_id": 21,
       "weather": "Cloudy"
     },
-    {
+    "209": {
       "category": "Health",
       "fraud": false,
       "id": 228,
@@ -3632,7 +3632,7 @@
       "user_id": 11,
       "weather": "Cloudy"
     },
-    {
+    "210": {
       "category": "Books",
       "fraud": true,
       "id": 311,
@@ -3648,7 +3648,7 @@
       "user_id": 20,
       "weather": "Snowy"
     },
-    {
+    "211": {
       "category": "Apparel",
       "fraud": true,
       "id": 44,
@@ -3664,7 +3664,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "212": {
       "category": "Books",
       "fraud": false,
       "id": 99,
@@ -3680,7 +3680,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "213": {
       "category": "Apparel",
       "fraud": true,
       "id": 386,
@@ -3696,7 +3696,7 @@
       "user_id": 7,
       "weather": "Snowy"
     },
-    {
+    "214": {
       "category": "Apparel",
       "fraud": false,
       "id": 396,
@@ -3712,7 +3712,7 @@
       "user_id": 24,
       "weather": "Cloudy"
     },
-    {
+    "215": {
       "category": "Electronics",
       "fraud": true,
       "id": 72,
@@ -3728,7 +3728,7 @@
       "user_id": 10,
       "weather": "Cloudy"
     },
-    {
+    "216": {
       "category": "Apparel",
       "fraud": false,
       "id": 96,
@@ -3744,7 +3744,7 @@
       "user_id": 2,
       "weather": "Snowy"
     },
-    {
+    "217": {
       "category": "Electronics",
       "fraud": false,
       "id": 382,
@@ -3760,7 +3760,7 @@
       "user_id": 7,
       "weather": "Snowy"
     },
-    {
+    "218": {
       "category": "Electronics",
       "fraud": true,
       "id": 227,
@@ -3776,7 +3776,7 @@
       "user_id": 14,
       "weather": "Cloudy"
     },
-    {
+    "219": {
       "category": "Books",
       "fraud": true,
       "id": 73,
@@ -3792,7 +3792,7 @@
       "user_id": 12,
       "weather": "Rainy"
     },
-    {
+    "220": {
       "category": "Health",
       "fraud": false,
       "id": 388,
@@ -3808,7 +3808,7 @@
       "user_id": 5,
       "weather": "Sunny"
     },
-    {
+    "221": {
       "category": "Electronics",
       "fraud": false,
       "id": 221,
@@ -3824,7 +3824,7 @@
       "user_id": 25,
       "weather": "Rainy"
     },
-    {
+    "222": {
       "category": "Apparel",
       "fraud": true,
       "id": 42,
@@ -3840,7 +3840,7 @@
       "user_id": 10,
       "weather": "Snowy"
     },
-    {
+    "223": {
       "category": "Books",
       "fraud": false,
       "id": 206,
@@ -3856,7 +3856,7 @@
       "user_id": 6,
       "weather": "Snowy"
     },
-    {
+    "224": {
       "category": "Health",
       "fraud": true,
       "id": 237,
@@ -3872,7 +3872,7 @@
       "user_id": 21,
       "weather": "Cloudy"
     },
-    {
+    "225": {
       "category": "Electronics",
       "fraud": false,
       "id": 185,
@@ -3888,7 +3888,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "226": {
       "category": "Health",
       "fraud": false,
       "id": 335,
@@ -3904,7 +3904,7 @@
       "user_id": 29,
       "weather": "Rainy"
     },
-    {
+    "227": {
       "category": "Apparel",
       "fraud": true,
       "id": 232,
@@ -3920,7 +3920,7 @@
       "user_id": 17,
       "weather": "Rainy"
     },
-    {
+    "228": {
       "category": "Electronics",
       "fraud": true,
       "id": 35,
@@ -3936,7 +3936,7 @@
       "user_id": 19,
       "weather": "Sunny"
     },
-    {
+    "229": {
       "category": "Books",
       "fraud": true,
       "id": 163,
@@ -3952,7 +3952,7 @@
       "user_id": 21,
       "weather": "Rainy"
     },
-    {
+    "230": {
       "category": "Health",
       "fraud": true,
       "id": 111,
@@ -3968,7 +3968,7 @@
       "user_id": 28,
       "weather": "Cloudy"
     },
-    {
+    "231": {
       "category": "Electronics",
       "fraud": false,
       "id": 227,
@@ -3984,7 +3984,7 @@
       "user_id": 2,
       "weather": "Cloudy"
     },
-    {
+    "232": {
       "category": "Apparel",
       "fraud": true,
       "id": 117,
@@ -4000,7 +4000,7 @@
       "user_id": 27,
       "weather": "Cloudy"
     },
-    {
+    "233": {
       "category": "Electronics",
       "fraud": true,
       "id": 34,
@@ -4016,7 +4016,7 @@
       "user_id": 2,
       "weather": "Snowy"
     },
-    {
+    "234": {
       "category": "Books",
       "fraud": false,
       "id": 87,
@@ -4032,7 +4032,7 @@
       "user_id": 30,
       "weather": "Snowy"
     },
-    {
+    "235": {
       "category": "Health",
       "fraud": true,
       "id": 331,
@@ -4048,7 +4048,7 @@
       "user_id": 1,
       "weather": "Cloudy"
     },
-    {
+    "236": {
       "category": "Electronics",
       "fraud": true,
       "id": 360,
@@ -4064,7 +4064,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "237": {
       "category": "Health",
       "fraud": true,
       "id": 342,
@@ -4080,7 +4080,7 @@
       "user_id": 28,
       "weather": "Sunny"
     },
-    {
+    "238": {
       "category": "Apparel",
       "fraud": false,
       "id": 205,
@@ -4096,7 +4096,7 @@
       "user_id": 30,
       "weather": "Sunny"
     },
-    {
+    "239": {
       "category": "Electronics",
       "fraud": true,
       "id": 149,
@@ -4112,7 +4112,7 @@
       "user_id": 20,
       "weather": "Snowy"
     },
-    {
+    "240": {
       "category": "Apparel",
       "fraud": false,
       "id": 55,
@@ -4128,7 +4128,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "241": {
       "category": "Apparel",
       "fraud": false,
       "id": 157,
@@ -4144,7 +4144,7 @@
       "user_id": 6,
       "weather": "Cloudy"
     },
-    {
+    "242": {
       "category": "Health",
       "fraud": false,
       "id": 357,
@@ -4160,7 +4160,7 @@
       "user_id": 30,
       "weather": "Sunny"
     },
-    {
+    "243": {
       "category": "Electronics",
       "fraud": true,
       "id": 110,
@@ -4176,7 +4176,7 @@
       "user_id": 9,
       "weather": "Cloudy"
     },
-    {
+    "244": {
       "category": "Apparel",
       "fraud": true,
       "id": 127,
@@ -4192,7 +4192,7 @@
       "user_id": 3,
       "weather": "Sunny"
     },
-    {
+    "245": {
       "category": "Apparel",
       "fraud": true,
       "id": 84,
@@ -4208,7 +4208,7 @@
       "user_id": 6,
       "weather": "Rainy"
     },
-    {
+    "246": {
       "category": "Apparel",
       "fraud": true,
       "id": 27,
@@ -4224,7 +4224,7 @@
       "user_id": 16,
       "weather": "Rainy"
     },
-    {
+    "247": {
       "category": "Electronics",
       "fraud": true,
       "id": 37,
@@ -4240,7 +4240,7 @@
       "user_id": 30,
       "weather": "Rainy"
     },
-    {
+    "248": {
       "category": "Electronics",
       "fraud": true,
       "id": 75,
@@ -4256,7 +4256,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "249": {
       "category": "Health",
       "fraud": true,
       "id": 339,
@@ -4272,7 +4272,7 @@
       "user_id": 18,
       "weather": "Snowy"
     },
-    {
+    "250": {
       "category": "Electronics",
       "fraud": false,
       "id": 321,
@@ -4288,7 +4288,7 @@
       "user_id": 26,
       "weather": "Cloudy"
     },
-    {
+    "251": {
       "category": "Electronics",
       "fraud": true,
       "id": 292,
@@ -4304,7 +4304,7 @@
       "user_id": 1,
       "weather": "Rainy"
     },
-    {
+    "252": {
       "category": "Apparel",
       "fraud": false,
       "id": 100,
@@ -4320,7 +4320,7 @@
       "user_id": 25,
       "weather": "Cloudy"
     },
-    {
+    "253": {
       "category": "Health",
       "fraud": true,
       "id": 238,
@@ -4336,7 +4336,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "254": {
       "category": "Apparel",
       "fraud": true,
       "id": 37,
@@ -4352,7 +4352,7 @@
       "user_id": 5,
       "weather": "Cloudy"
     },
-    {
+    "255": {
       "category": "Health",
       "fraud": true,
       "id": 100,
@@ -4368,7 +4368,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "256": {
       "category": "Books",
       "fraud": false,
       "id": 50,
@@ -4384,7 +4384,7 @@
       "user_id": 2,
       "weather": "Snowy"
     },
-    {
+    "257": {
       "category": "Health",
       "fraud": false,
       "id": 22,
@@ -4400,7 +4400,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "258": {
       "category": "Electronics",
       "fraud": true,
       "id": 161,
@@ -4416,7 +4416,7 @@
       "user_id": 18,
       "weather": "Sunny"
     },
-    {
+    "259": {
       "category": "Health",
       "fraud": true,
       "id": 235,
@@ -4432,7 +4432,7 @@
       "user_id": 30,
       "weather": "Snowy"
     },
-    {
+    "260": {
       "category": "Electronics",
       "fraud": true,
       "id": 223,
@@ -4448,7 +4448,7 @@
       "user_id": 7,
       "weather": "Cloudy"
     },
-    {
+    "261": {
       "category": "Books",
       "fraud": false,
       "id": 192,
@@ -4464,7 +4464,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "262": {
       "category": "Books",
       "fraud": true,
       "id": 378,
@@ -4480,7 +4480,7 @@
       "user_id": 9,
       "weather": "Snowy"
     },
-    {
+    "263": {
       "category": "Books",
       "fraud": true,
       "id": 270,
@@ -4496,7 +4496,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "264": {
       "category": "Apparel",
       "fraud": true,
       "id": 104,
@@ -4512,7 +4512,7 @@
       "user_id": 6,
       "weather": "Rainy"
     },
-    {
+    "265": {
       "category": "Apparel",
       "fraud": true,
       "id": 168,
@@ -4528,7 +4528,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "266": {
       "category": "Health",
       "fraud": true,
       "id": 60,
@@ -4544,7 +4544,7 @@
       "user_id": 17,
       "weather": "Sunny"
     },
-    {
+    "267": {
       "category": "Apparel",
       "fraud": true,
       "id": 364,
@@ -4560,7 +4560,7 @@
       "user_id": 25,
       "weather": "Snowy"
     },
-    {
+    "268": {
       "category": "Books",
       "fraud": true,
       "id": 400,
@@ -4576,7 +4576,7 @@
       "user_id": 7,
       "weather": "Rainy"
     },
-    {
+    "269": {
       "category": "Health",
       "fraud": true,
       "id": 230,
@@ -4592,7 +4592,7 @@
       "user_id": 26,
       "weather": "Sunny"
     },
-    {
+    "270": {
       "category": "Books",
       "fraud": false,
       "id": 160,
@@ -4608,7 +4608,7 @@
       "user_id": 25,
       "weather": "Cloudy"
     },
-    {
+    "271": {
       "category": "Electronics",
       "fraud": false,
       "id": 282,
@@ -4624,7 +4624,7 @@
       "user_id": 18,
       "weather": "Snowy"
     },
-    {
+    "272": {
       "category": "Health",
       "fraud": false,
       "id": 121,
@@ -4640,7 +4640,7 @@
       "user_id": 4,
       "weather": "Cloudy"
     },
-    {
+    "273": {
       "category": "Electronics",
       "fraud": true,
       "id": 373,
@@ -4656,7 +4656,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "274": {
       "category": "Health",
       "fraud": true,
       "id": 158,
@@ -4672,7 +4672,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "275": {
       "category": "Books",
       "fraud": true,
       "id": 163,
@@ -4688,7 +4688,7 @@
       "user_id": 12,
       "weather": "Snowy"
     },
-    {
+    "276": {
       "category": "Health",
       "fraud": true,
       "id": 359,
@@ -4704,7 +4704,7 @@
       "user_id": 22,
       "weather": "Cloudy"
     },
-    {
+    "277": {
       "category": "Apparel",
       "fraud": true,
       "id": 7,
@@ -4720,7 +4720,7 @@
       "user_id": 19,
       "weather": "Snowy"
     },
-    {
+    "278": {
       "category": "Electronics",
       "fraud": true,
       "id": 104,
@@ -4736,7 +4736,7 @@
       "user_id": 12,
       "weather": "Snowy"
     },
-    {
+    "279": {
       "category": "Books",
       "fraud": true,
       "id": 18,
@@ -4752,7 +4752,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "280": {
       "category": "Health",
       "fraud": true,
       "id": 212,
@@ -4768,7 +4768,7 @@
       "user_id": 20,
       "weather": "Cloudy"
     },
-    {
+    "281": {
       "category": "Health",
       "fraud": true,
       "id": 120,
@@ -4784,7 +4784,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "282": {
       "category": "Health",
       "fraud": false,
       "id": 258,
@@ -4800,7 +4800,7 @@
       "user_id": 11,
       "weather": "Snowy"
     },
-    {
+    "283": {
       "category": "Health",
       "fraud": true,
       "id": 256,
@@ -4816,7 +4816,7 @@
       "user_id": 15,
       "weather": "Sunny"
     },
-    {
+    "284": {
       "category": "Books",
       "fraud": false,
       "id": 366,
@@ -4832,7 +4832,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "285": {
       "category": "Apparel",
       "fraud": true,
       "id": 245,
@@ -4848,7 +4848,7 @@
       "user_id": 21,
       "weather": "Rainy"
     },
-    {
+    "286": {
       "category": "Books",
       "fraud": false,
       "id": 78,
@@ -4864,7 +4864,7 @@
       "user_id": 26,
       "weather": "Sunny"
     },
-    {
+    "287": {
       "category": "Health",
       "fraud": false,
       "id": 165,
@@ -4880,7 +4880,7 @@
       "user_id": 13,
       "weather": "Snowy"
     },
-    {
+    "288": {
       "category": "Books",
       "fraud": true,
       "id": 357,
@@ -4896,7 +4896,7 @@
       "user_id": 23,
       "weather": "Sunny"
     },
-    {
+    "289": {
       "category": "Health",
       "fraud": false,
       "id": 87,
@@ -4912,7 +4912,7 @@
       "user_id": 9,
       "weather": "Sunny"
     },
-    {
+    "290": {
       "category": "Electronics",
       "fraud": false,
       "id": 128,
@@ -4928,7 +4928,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "291": {
       "category": "Books",
       "fraud": false,
       "id": 344,
@@ -4944,7 +4944,7 @@
       "user_id": 7,
       "weather": "Sunny"
     },
-    {
+    "292": {
       "category": "Electronics",
       "fraud": true,
       "id": 60,
@@ -4960,7 +4960,7 @@
       "user_id": 16,
       "weather": "Sunny"
     },
-    {
+    "293": {
       "category": "Electronics",
       "fraud": false,
       "id": 127,
@@ -4976,7 +4976,7 @@
       "user_id": 6,
       "weather": "Cloudy"
     },
-    {
+    "294": {
       "category": "Books",
       "fraud": false,
       "id": 398,
@@ -4992,7 +4992,7 @@
       "user_id": 2,
       "weather": "Snowy"
     },
-    {
+    "295": {
       "category": "Books",
       "fraud": false,
       "id": 301,
@@ -5008,7 +5008,7 @@
       "user_id": 8,
       "weather": "Cloudy"
     },
-    {
+    "296": {
       "category": "Apparel",
       "fraud": true,
       "id": 265,
@@ -5024,7 +5024,7 @@
       "user_id": 23,
       "weather": "Rainy"
     },
-    {
+    "297": {
       "category": "Books",
       "fraud": false,
       "id": 219,
@@ -5040,7 +5040,7 @@
       "user_id": 24,
       "weather": "Sunny"
     },
-    {
+    "298": {
       "category": "Apparel",
       "fraud": true,
       "id": 320,
@@ -5056,7 +5056,7 @@
       "user_id": 27,
       "weather": "Cloudy"
     },
-    {
+    "299": {
       "category": "Books",
       "fraud": true,
       "id": 313,
@@ -5072,7 +5072,7 @@
       "user_id": 9,
       "weather": "Rainy"
     },
-    {
+    "300": {
       "category": "Electronics",
       "fraud": false,
       "id": 392,
@@ -5088,7 +5088,7 @@
       "user_id": 1,
       "weather": "Cloudy"
     },
-    {
+    "301": {
       "category": "Electronics",
       "fraud": false,
       "id": 13,
@@ -5104,7 +5104,7 @@
       "user_id": 3,
       "weather": "Sunny"
     },
-    {
+    "302": {
       "category": "Electronics",
       "fraud": false,
       "id": 223,
@@ -5120,7 +5120,7 @@
       "user_id": 17,
       "weather": "Sunny"
     },
-    {
+    "303": {
       "category": "Apparel",
       "fraud": true,
       "id": 217,
@@ -5136,7 +5136,7 @@
       "user_id": 25,
       "weather": "Snowy"
     },
-    {
+    "304": {
       "category": "Books",
       "fraud": true,
       "id": 214,
@@ -5152,7 +5152,7 @@
       "user_id": 11,
       "weather": "Rainy"
     },
-    {
+    "305": {
       "category": "Health",
       "fraud": false,
       "id": 385,
@@ -5168,7 +5168,7 @@
       "user_id": 1,
       "weather": "Rainy"
     },
-    {
+    "306": {
       "category": "Books",
       "fraud": false,
       "id": 108,
@@ -5184,7 +5184,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "307": {
       "category": "Electronics",
       "fraud": false,
       "id": 372,
@@ -5200,7 +5200,7 @@
       "user_id": 26,
       "weather": "Snowy"
     },
-    {
+    "308": {
       "category": "Electronics",
       "fraud": false,
       "id": 235,
@@ -5216,7 +5216,7 @@
       "user_id": 8,
       "weather": "Sunny"
     },
-    {
+    "309": {
       "category": "Health",
       "fraud": false,
       "id": 52,
@@ -5232,7 +5232,7 @@
       "user_id": 21,
       "weather": "Rainy"
     },
-    {
+    "310": {
       "category": "Apparel",
       "fraud": false,
       "id": 360,
@@ -5248,7 +5248,7 @@
       "user_id": 2,
       "weather": "Sunny"
     },
-    {
+    "311": {
       "category": "Books",
       "fraud": false,
       "id": 338,
@@ -5264,7 +5264,7 @@
       "user_id": 20,
       "weather": "Sunny"
     },
-    {
+    "312": {
       "category": "Health",
       "fraud": true,
       "id": 363,
@@ -5280,7 +5280,7 @@
       "user_id": 22,
       "weather": "Rainy"
     },
-    {
+    "313": {
       "category": "Books",
       "fraud": true,
       "id": 103,
@@ -5296,7 +5296,7 @@
       "user_id": 5,
       "weather": "Sunny"
     },
-    {
+    "314": {
       "category": "Health",
       "fraud": false,
       "id": 136,
@@ -5312,7 +5312,7 @@
       "user_id": 7,
       "weather": "Snowy"
     },
-    {
+    "315": {
       "category": "Apparel",
       "fraud": true,
       "id": 343,
@@ -5328,7 +5328,7 @@
       "user_id": 15,
       "weather": "Sunny"
     },
-    {
+    "316": {
       "category": "Health",
       "fraud": true,
       "id": 148,
@@ -5344,7 +5344,7 @@
       "user_id": 22,
       "weather": "Sunny"
     },
-    {
+    "317": {
       "category": "Apparel",
       "fraud": false,
       "id": 371,
@@ -5360,7 +5360,7 @@
       "user_id": 27,
       "weather": "Sunny"
     },
-    {
+    "318": {
       "category": "Electronics",
       "fraud": true,
       "id": 109,
@@ -5376,7 +5376,7 @@
       "user_id": 7,
       "weather": "Sunny"
     },
-    {
+    "319": {
       "category": "Books",
       "fraud": false,
       "id": 325,
@@ -5392,7 +5392,7 @@
       "user_id": 4,
       "weather": "Cloudy"
     },
-    {
+    "320": {
       "category": "Books",
       "fraud": false,
       "id": 365,
@@ -5408,7 +5408,7 @@
       "user_id": 24,
       "weather": "Snowy"
     },
-    {
+    "321": {
       "category": "Apparel",
       "fraud": false,
       "id": 193,
@@ -5424,7 +5424,7 @@
       "user_id": 9,
       "weather": "Cloudy"
     },
-    {
+    "322": {
       "category": "Books",
       "fraud": true,
       "id": 306,
@@ -5440,7 +5440,7 @@
       "user_id": 25,
       "weather": "Sunny"
     },
-    {
+    "323": {
       "category": "Apparel",
       "fraud": true,
       "id": 325,
@@ -5456,7 +5456,7 @@
       "user_id": 5,
       "weather": "Sunny"
     },
-    {
+    "324": {
       "category": "Health",
       "fraud": false,
       "id": 292,
@@ -5472,7 +5472,7 @@
       "user_id": 14,
       "weather": "Snowy"
     },
-    {
+    "325": {
       "category": "Books",
       "fraud": true,
       "id": 283,
@@ -5488,7 +5488,7 @@
       "user_id": 12,
       "weather": "Sunny"
     },
-    {
+    "326": {
       "category": "Apparel",
       "fraud": true,
       "id": 32,
@@ -5504,7 +5504,7 @@
       "user_id": 11,
       "weather": "Sunny"
     },
-    {
+    "327": {
       "category": "Health",
       "fraud": true,
       "id": 273,
@@ -5520,7 +5520,7 @@
       "user_id": 14,
       "weather": "Rainy"
     },
-    {
+    "328": {
       "category": "Health",
       "fraud": true,
       "id": 138,
@@ -5536,7 +5536,7 @@
       "user_id": 22,
       "weather": "Snowy"
     },
-    {
+    "329": {
       "category": "Health",
       "fraud": false,
       "id": 121,
@@ -5552,7 +5552,7 @@
       "user_id": 15,
       "weather": "Sunny"
     },
-    {
+    "330": {
       "category": "Books",
       "fraud": false,
       "id": 96,
@@ -5568,7 +5568,7 @@
       "user_id": 29,
       "weather": "Snowy"
     },
-    {
+    "331": {
       "category": "Books",
       "fraud": false,
       "id": 326,
@@ -5584,7 +5584,7 @@
       "user_id": 17,
       "weather": "Snowy"
     },
-    {
+    "332": {
       "category": "Apparel",
       "fraud": true,
       "id": 341,
@@ -5600,7 +5600,7 @@
       "user_id": 13,
       "weather": "Sunny"
     },
-    {
+    "333": {
       "category": "Health",
       "fraud": false,
       "id": 364,
@@ -5616,7 +5616,7 @@
       "user_id": 12,
       "weather": "Cloudy"
     },
-    {
+    "334": {
       "category": "Electronics",
       "fraud": true,
       "id": 341,
@@ -5632,7 +5632,7 @@
       "user_id": 4,
       "weather": "Cloudy"
     },
-    {
+    "335": {
       "category": "Apparel",
       "fraud": true,
       "id": 354,
@@ -5648,7 +5648,7 @@
       "user_id": 26,
       "weather": "Rainy"
     },
-    {
+    "336": {
       "category": "Electronics",
       "fraud": false,
       "id": 362,
@@ -5664,7 +5664,7 @@
       "user_id": 19,
       "weather": "Cloudy"
     },
-    {
+    "337": {
       "category": "Electronics",
       "fraud": true,
       "id": 198,
@@ -5680,7 +5680,7 @@
       "user_id": 14,
       "weather": "Snowy"
     },
-    {
+    "338": {
       "category": "Electronics",
       "fraud": false,
       "id": 385,
@@ -5696,7 +5696,7 @@
       "user_id": 29,
       "weather": "Cloudy"
     },
-    {
+    "339": {
       "category": "Books",
       "fraud": false,
       "id": 112,
@@ -5712,7 +5712,7 @@
       "user_id": 12,
       "weather": "Snowy"
     },
-    {
+    "340": {
       "category": "Health",
       "fraud": true,
       "id": 75,
@@ -5728,7 +5728,7 @@
       "user_id": 1,
       "weather": "Sunny"
     },
-    {
+    "341": {
       "category": "Apparel",
       "fraud": true,
       "id": 178,
@@ -5744,7 +5744,7 @@
       "user_id": 30,
       "weather": "Cloudy"
     },
-    {
+    "342": {
       "category": "Books",
       "fraud": true,
       "id": 63,
@@ -5760,7 +5760,7 @@
       "user_id": 27,
       "weather": "Snowy"
     },
-    {
+    "343": {
       "category": "Apparel",
       "fraud": true,
       "id": 154,
@@ -5776,7 +5776,7 @@
       "user_id": 4,
       "weather": "Snowy"
     },
-    {
+    "344": {
       "category": "Books",
       "fraud": true,
       "id": 266,
@@ -5792,7 +5792,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "345": {
       "category": "Health",
       "fraud": true,
       "id": 247,
@@ -5808,7 +5808,7 @@
       "user_id": 15,
       "weather": "Cloudy"
     },
-    {
+    "346": {
       "category": "Health",
       "fraud": true,
       "id": 206,
@@ -5824,7 +5824,7 @@
       "user_id": 3,
       "weather": "Cloudy"
     },
-    {
+    "347": {
       "category": "Apparel",
       "fraud": false,
       "id": 13,
@@ -5840,7 +5840,7 @@
       "user_id": 29,
       "weather": "Sunny"
     },
-    {
+    "348": {
       "category": "Health",
       "fraud": false,
       "id": 191,
@@ -5856,7 +5856,7 @@
       "user_id": 9,
       "weather": "Rainy"
     },
-    {
+    "349": {
       "category": "Electronics",
       "fraud": false,
       "id": 165,
@@ -5872,7 +5872,7 @@
       "user_id": 3,
       "weather": "Snowy"
     },
-    {
+    "350": {
       "category": "Books",
       "fraud": true,
       "id": 73,
@@ -5888,7 +5888,7 @@
       "user_id": 27,
       "weather": "Cloudy"
     },
-    {
+    "351": {
       "category": "Health",
       "fraud": true,
       "id": 324,
@@ -5904,7 +5904,7 @@
       "user_id": 25,
       "weather": "Cloudy"
     },
-    {
+    "352": {
       "category": "Books",
       "fraud": true,
       "id": 323,
@@ -5920,7 +5920,7 @@
       "user_id": 8,
       "weather": "Snowy"
     },
-    {
+    "353": {
       "category": "Health",
       "fraud": false,
       "id": 254,
@@ -5936,7 +5936,7 @@
       "user_id": 7,
       "weather": "Rainy"
     },
-    {
+    "354": {
       "category": "Health",
       "fraud": true,
       "id": 275,
@@ -5952,7 +5952,7 @@
       "user_id": 21,
       "weather": "Sunny"
     },
-    {
+    "355": {
       "category": "Health",
       "fraud": true,
       "id": 382,
@@ -5968,7 +5968,7 @@
       "user_id": 22,
       "weather": "Snowy"
     },
-    {
+    "356": {
       "category": "Apparel",
       "fraud": false,
       "id": 273,
@@ -5984,7 +5984,7 @@
       "user_id": 1,
       "weather": "Snowy"
     },
-    {
+    "357": {
       "category": "Electronics",
       "fraud": false,
       "id": 115,
@@ -6000,7 +6000,7 @@
       "user_id": 6,
       "weather": "Cloudy"
     },
-    {
+    "358": {
       "category": "Apparel",
       "fraud": true,
       "id": 88,
@@ -6016,7 +6016,7 @@
       "user_id": 30,
       "weather": "Rainy"
     },
-    {
+    "359": {
       "category": "Electronics",
       "fraud": true,
       "id": 263,
@@ -6032,7 +6032,7 @@
       "user_id": 15,
       "weather": "Sunny"
     },
-    {
+    "360": {
       "category": "Electronics",
       "fraud": true,
       "id": 133,
@@ -6048,7 +6048,7 @@
       "user_id": 24,
       "weather": "Rainy"
     },
-    {
+    "361": {
       "category": "Electronics",
       "fraud": true,
       "id": 308,
@@ -6064,7 +6064,7 @@
       "user_id": 18,
       "weather": "Snowy"
     },
-    {
+    "362": {
       "category": "Books",
       "fraud": false,
       "id": 153,
@@ -6080,7 +6080,7 @@
       "user_id": 1,
       "weather": "Sunny"
     },
-    {
+    "363": {
       "category": "Books",
       "fraud": true,
       "id": 120,
@@ -6096,7 +6096,7 @@
       "user_id": 1,
       "weather": "Sunny"
     },
-    {
+    "364": {
       "category": "Electronics",
       "fraud": false,
       "id": 260,
@@ -6112,7 +6112,7 @@
       "user_id": 13,
       "weather": "Rainy"
     },
-    {
+    "365": {
       "category": "Health",
       "fraud": false,
       "id": 65,
@@ -6128,7 +6128,7 @@
       "user_id": 21,
       "weather": "Rainy"
     },
-    {
+    "366": {
       "category": "Health",
       "fraud": true,
       "id": 363,
@@ -6144,7 +6144,7 @@
       "user_id": 30,
       "weather": "Cloudy"
     },
-    {
+    "367": {
       "category": "Books",
       "fraud": true,
       "id": 280,
@@ -6160,7 +6160,7 @@
       "user_id": 2,
       "weather": "Sunny"
     },
-    {
+    "368": {
       "category": "Apparel",
       "fraud": true,
       "id": 348,
@@ -6176,7 +6176,7 @@
       "user_id": 6,
       "weather": "Sunny"
     },
-    {
+    "369": {
       "category": "Books",
       "fraud": true,
       "id": 370,
@@ -6192,7 +6192,7 @@
       "user_id": 19,
       "weather": "Snowy"
     },
-    {
+    "370": {
       "category": "Health",
       "fraud": true,
       "id": 172,
@@ -6208,7 +6208,7 @@
       "user_id": 30,
       "weather": "Rainy"
     },
-    {
+    "371": {
       "category": "Health",
       "fraud": true,
       "id": 36,
@@ -6224,7 +6224,7 @@
       "user_id": 10,
       "weather": "Cloudy"
     },
-    {
+    "372": {
       "category": "Books",
       "fraud": true,
       "id": 321,
@@ -6240,7 +6240,7 @@
       "user_id": 30,
       "weather": "Sunny"
     },
-    {
+    "373": {
       "category": "Books",
       "fraud": true,
       "id": 64,
@@ -6256,7 +6256,7 @@
       "user_id": 23,
       "weather": "Sunny"
     },
-    {
+    "374": {
       "category": "Apparel",
       "fraud": false,
       "id": 239,
@@ -6272,7 +6272,7 @@
       "user_id": 24,
       "weather": "Cloudy"
     },
-    {
+    "375": {
       "category": "Books",
       "fraud": true,
       "id": 86,
@@ -6288,7 +6288,7 @@
       "user_id": 19,
       "weather": "Rainy"
     },
-    {
+    "376": {
       "category": "Electronics",
       "fraud": true,
       "id": 392,
@@ -6304,7 +6304,7 @@
       "user_id": 14,
       "weather": "Snowy"
     },
-    {
+    "377": {
       "category": "Apparel",
       "fraud": false,
       "id": 20,
@@ -6320,7 +6320,7 @@
       "user_id": 18,
       "weather": "Sunny"
     },
-    {
+    "378": {
       "category": "Electronics",
       "fraud": false,
       "id": 123,
@@ -6336,7 +6336,7 @@
       "user_id": 15,
       "weather": "Cloudy"
     },
-    {
+    "379": {
       "category": "Electronics",
       "fraud": true,
       "id": 298,
@@ -6352,7 +6352,7 @@
       "user_id": 21,
       "weather": "Sunny"
     },
-    {
+    "380": {
       "category": "Books",
       "fraud": false,
       "id": 151,
@@ -6368,7 +6368,7 @@
       "user_id": 26,
       "weather": "Sunny"
     },
-    {
+    "381": {
       "category": "Electronics",
       "fraud": true,
       "id": 192,
@@ -6384,7 +6384,7 @@
       "user_id": 7,
       "weather": "Rainy"
     },
-    {
+    "382": {
       "category": "Apparel",
       "fraud": true,
       "id": 140,
@@ -6400,7 +6400,7 @@
       "user_id": 27,
       "weather": "Sunny"
     },
-    {
+    "383": {
       "category": "Books",
       "fraud": false,
       "id": 128,
@@ -6416,7 +6416,7 @@
       "user_id": 15,
       "weather": "Snowy"
     },
-    {
+    "384": {
       "category": "Health",
       "fraud": true,
       "id": 93,
@@ -6432,7 +6432,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "385": {
       "category": "Health",
       "fraud": true,
       "id": 151,
@@ -6448,7 +6448,7 @@
       "user_id": 27,
       "weather": "Rainy"
     },
-    {
+    "386": {
       "category": "Electronics",
       "fraud": false,
       "id": 58,
@@ -6464,7 +6464,7 @@
       "user_id": 13,
       "weather": "Cloudy"
     },
-    {
+    "387": {
       "category": "Health",
       "fraud": true,
       "id": 167,
@@ -6480,7 +6480,7 @@
       "user_id": 17,
       "weather": "Cloudy"
     },
-    {
+    "388": {
       "category": "Apparel",
       "fraud": true,
       "id": 55,
@@ -6496,7 +6496,7 @@
       "user_id": 16,
       "weather": "Sunny"
     },
-    {
+    "389": {
       "category": "Apparel",
       "fraud": false,
       "id": 245,
@@ -6512,7 +6512,7 @@
       "user_id": 13,
       "weather": "Sunny"
     },
-    {
+    "390": {
       "category": "Electronics",
       "fraud": false,
       "id": 14,
@@ -6528,7 +6528,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "391": {
       "category": "Apparel",
       "fraud": true,
       "id": 90,
@@ -6544,7 +6544,7 @@
       "user_id": 28,
       "weather": "Sunny"
     },
-    {
+    "392": {
       "category": "Apparel",
       "fraud": true,
       "id": 262,
@@ -6560,7 +6560,7 @@
       "user_id": 22,
       "weather": "Sunny"
     },
-    {
+    "393": {
       "category": "Health",
       "fraud": true,
       "id": 124,
@@ -6576,7 +6576,7 @@
       "user_id": 4,
       "weather": "Snowy"
     },
-    {
+    "394": {
       "category": "Electronics",
       "fraud": true,
       "id": 226,
@@ -6592,7 +6592,7 @@
       "user_id": 15,
       "weather": "Cloudy"
     },
-    {
+    "395": {
       "category": "Electronics",
       "fraud": true,
       "id": 280,
@@ -6608,7 +6608,7 @@
       "user_id": 11,
       "weather": "Cloudy"
     },
-    {
+    "396": {
       "category": "Electronics",
       "fraud": false,
       "id": 208,
@@ -6624,7 +6624,7 @@
       "user_id": 28,
       "weather": "Rainy"
     },
-    {
+    "397": {
       "category": "Books",
       "fraud": true,
       "id": 360,
@@ -6640,7 +6640,7 @@
       "user_id": 10,
       "weather": "Rainy"
     },
-    {
+    "398": {
       "category": "Books",
       "fraud": false,
       "id": 357,
@@ -6656,7 +6656,7 @@
       "user_id": 15,
       "weather": "Rainy"
     },
-    {
+    "399": {
       "category": "Health",
       "fraud": false,
       "id": 385,
@@ -6672,7 +6672,7 @@
       "user_id": 27,
       "weather": "Rainy"
     },
-    {
+    "400": {
       "category": "Books",
       "fraud": false,
       "id": 409,
@@ -6688,7 +6688,7 @@
       "user_id": 36,
       "weather": "Rainy"
     },
-    {
+    "401": {
       "category": "Books",
       "fraud": false,
       "id": 401,
@@ -6704,7 +6704,7 @@
       "user_id": 35,
       "weather": "Rainy"
     },
-    {
+    "402": {
       "category": "Books",
       "fraud": false,
       "id": 402,
@@ -6720,7 +6720,7 @@
       "user_id": 34,
       "weather": "Snowy"
     },
-    {
+    "403": {
       "category": "Apparel",
       "fraud": false,
       "id": 403,
@@ -6736,7 +6736,7 @@
       "user_id": 39,
       "weather": "Snowy"
     },
-    {
+    "404": {
       "category": "Books",
       "fraud": false,
       "id": 408,
@@ -6752,7 +6752,7 @@
       "user_id": 34,
       "weather": "Sunny"
     },
-    {
+    "405": {
       "category": "Health",
       "fraud": false,
       "id": 410,
@@ -6768,7 +6768,7 @@
       "user_id": 31,
       "weather": "Sunny"
     },
-    {
+    "406": {
       "category": "Apparel",
       "fraud": false,
       "id": 403,
@@ -6784,7 +6784,7 @@
       "user_id": 34,
       "weather": "Rainy"
     },
-    {
+    "407": {
       "category": "Apparel",
       "fraud": false,
       "id": 402,
@@ -6800,7 +6800,7 @@
       "user_id": 36,
       "weather": "Rainy"
     },
-    {
+    "408": {
       "category": "Electronics",
       "fraud": false,
       "id": 401,
@@ -6816,7 +6816,7 @@
       "user_id": 34,
       "weather": "Cloudy"
     },
-    {
+    "409": {
       "category": "Books",
       "fraud": false,
       "id": 405,
@@ -6831,10 +6831,23 @@
       "user_agent": "Mozilla/5.0",
       "user_id": 38,
       "weather": "Snowy"
+    },
+    "-Nxfh7sHbscWNzkM848X": {
+      "category": "Electronics",
+      "currency": "USD",
+      "id": "3",
+      "issuer": "MasterCard",
+      "location": "Paris, France",
+      "price": 100,
+      "product": "Phone",
+      "time": "2024-05-10T16:45:00Z",
+      "user_agent": "Mozilla/5.0",
+      "user_id": "3",
+      "weather": "Sunny"
     }
-  ],
-  "users": [
-    {
+  },
+  "users": {
+    "0": {
       "age": 29,
       "currency": "GBP",
       "gender": "male",
@@ -6850,7 +6863,7 @@
       "name": "Garner Turner",
       "segment": "business"
     },
-    {
+    "1": {
       "age": 21,
       "currency": "USD",
       "gender": "male",
@@ -6864,7 +6877,7 @@
       "name": "Griffin Griffith",
       "segment": "consumer"
     },
-    {
+    "2": {
       "age": 47,
       "currency": "USD",
       "gender": "female",
@@ -6880,7 +6893,7 @@
       "name": "Melody Watson",
       "segment": "consumer"
     },
-    {
+    "3": {
       "age": 42,
       "currency": "USD",
       "gender": "male",
@@ -6894,7 +6907,7 @@
       "name": "Conrad Sexton",
       "segment": "enterprise"
     },
-    {
+    "4": {
       "age": 95,
       "currency": "USD",
       "gender": "female",
@@ -6909,7 +6922,7 @@
       "name": "Janelle Hooper",
       "segment": "consumer"
     },
-    {
+    "5": {
       "age": 90,
       "currency": "EUR",
       "gender": "male",
@@ -6923,7 +6936,7 @@
       "name": "Forbes Juarez",
       "segment": "consumer"
     },
-    {
+    "6": {
       "age": 88,
       "currency": "EUR",
       "gender": "female",
@@ -6939,7 +6952,7 @@
       "name": "Lindsey Kaufman",
       "segment": "consumer"
     },
-    {
+    "7": {
       "age": 98,
       "currency": "USD",
       "gender": "male",
@@ -6953,7 +6966,7 @@
       "name": "Bond Dodson",
       "segment": "business"
     },
-    {
+    "8": {
       "age": 77,
       "currency": "USD",
       "gender": "female",
@@ -6969,7 +6982,7 @@
       "name": "Tammi Mccormick",
       "segment": "business"
     },
-    {
+    "9": {
       "age": 84,
       "currency": "EUR",
       "gender": "female",
@@ -6984,7 +6997,7 @@
       "name": "Lorrie Kim",
       "segment": "enterprise"
     },
-    {
+    "10": {
       "age": 89,
       "currency": "EUR",
       "gender": "male",
@@ -7000,7 +7013,7 @@
       "name": "Hale Rollins",
       "segment": "business"
     },
-    {
+    "11": {
       "age": 19,
       "currency": "EUR",
       "gender": "male",
@@ -7014,7 +7027,7 @@
       "name": "Gordon Morton",
       "segment": "enterprise"
     },
-    {
+    "12": {
       "age": 96,
       "currency": "GBP",
       "gender": "female",
@@ -7028,7 +7041,7 @@
       "name": "Leta Barron",
       "segment": "consumer"
     },
-    {
+    "13": {
       "age": 38,
       "currency": "GBP",
       "gender": "female",
@@ -7042,7 +7055,7 @@
       "name": "Sonia Clay",
       "segment": "business"
     },
-    {
+    "14": {
       "age": 63,
       "currency": "EUR",
       "gender": "male",
@@ -7058,7 +7071,7 @@
       "name": "Blake Marsh",
       "segment": "enterprise"
     },
-    {
+    "15": {
       "age": 37,
       "currency": "USD",
       "gender": "female",
@@ -7072,7 +7085,7 @@
       "name": "Lilly Goff",
       "segment": "business"
     },
-    {
+    "16": {
       "age": 64,
       "currency": "EUR",
       "gender": "male",
@@ -7088,7 +7101,7 @@
       "name": "Harris Madden",
       "segment": "enterprise"
     },
-    {
+    "17": {
       "age": 34,
       "currency": "GBP",
       "gender": "male",
@@ -7102,7 +7115,7 @@
       "name": "Gentry Herrera",
       "segment": "consumer"
     },
-    {
+    "18": {
       "age": 90,
       "currency": "GBP",
       "gender": "male",
@@ -7117,7 +7130,7 @@
       "name": "Hayden Ferguson",
       "segment": "enterprise"
     },
-    {
+    "19": {
       "age": 50,
       "currency": "USD",
       "gender": "male",
@@ -7133,7 +7146,7 @@
       "name": "Butler Dixon",
       "segment": "enterprise"
     },
-    {
+    "20": {
       "age": 87,
       "currency": "GBP",
       "gender": "female",
@@ -7148,7 +7161,7 @@
       "name": "Corinne Tyson",
       "segment": "business"
     },
-    {
+    "21": {
       "age": 58,
       "currency": "EUR",
       "gender": "male",
@@ -7163,7 +7176,7 @@
       "name": "Oneill Love",
       "segment": "business"
     },
-    {
+    "22": {
       "age": 64,
       "currency": "USD",
       "gender": "male",
@@ -7178,7 +7191,7 @@
       "name": "Merritt Francis",
       "segment": "consumer"
     },
-    {
+    "23": {
       "age": 66,
       "currency": "EUR",
       "gender": "male",
@@ -7193,7 +7206,7 @@
       "name": "Garza Cantu",
       "segment": "business"
     },
-    {
+    "24": {
       "age": 39,
       "currency": "EUR",
       "gender": "male",
@@ -7207,7 +7220,7 @@
       "name": "Chavez Mayo",
       "segment": "business"
     },
-    {
+    "25": {
       "age": 48,
       "currency": "EUR",
       "gender": "male",
@@ -7222,7 +7235,7 @@
       "name": "Mcintyre Petty",
       "segment": "consumer"
     },
-    {
+    "26": {
       "age": 54,
       "currency": "USD",
       "gender": "male",
@@ -7237,7 +7250,7 @@
       "name": "Acevedo Davidson",
       "segment": "business"
     },
-    {
+    "27": {
       "age": 44,
       "currency": "EUR",
       "gender": "female",
@@ -7253,7 +7266,7 @@
       "name": "Liliana Peck",
       "segment": "consumer"
     },
-    {
+    "28": {
       "age": 55,
       "currency": "USD",
       "gender": "male",
@@ -7269,7 +7282,7 @@
       "name": "Velasquez Dejesus",
       "segment": "enterprise"
     },
-    {
+    "29": {
       "age": 66,
       "currency": "USD",
       "gender": "female",
@@ -7283,7 +7296,7 @@
       "name": "Bridgett Gibbs",
       "segment": "business"
     },
-    {
+    "30": {
       "age": 95,
       "currency": "GBP",
       "gender": "female",
@@ -7297,7 +7310,7 @@
       "name": "Amelia Browning",
       "segment": "business"
     },
-    {
+    "31": {
       "age": 95,
       "currency": "EUR",
       "gender": "male",
@@ -7312,7 +7325,7 @@
       "name": "Francis Mathews",
       "segment": "consumer"
     },
-    {
+    "32": {
       "age": 95,
       "currency": "USD",
       "gender": "female",
@@ -7327,7 +7340,7 @@
       "name": "Odessa Foster",
       "segment": "business"
     },
-    {
+    "33": {
       "age": 95,
       "currency": "EUR",
       "gender": "female",
@@ -7342,7 +7355,7 @@
       "name": "Stella Barron",
       "segment": "enterprise"
     },
-    {
+    "34": {
       "age": 95,
       "currency": "USD",
       "gender": "female",
@@ -7356,7 +7369,7 @@
       "name": "Jacquelyn Craft",
       "segment": "consumer"
     },
-    {
+    "35": {
       "age": 95,
       "currency": "USD",
       "gender": "male",
@@ -7372,7 +7385,7 @@
       "name": "Sherman Reynolds",
       "segment": "enterprise"
     },
-    {
+    "36": {
       "age": 95,
       "currency": "USD",
       "gender": "female",
@@ -7388,7 +7401,7 @@
       "name": "Elena Gregory",
       "segment": "consumer"
     },
-    {
+    "37": {
       "age": 95,
       "currency": "USD",
       "gender": "female",
@@ -7404,7 +7417,7 @@
       "name": "Henrietta Woods",
       "segment": "consumer"
     },
-    {
+    "38": {
       "age": 95,
       "currency": "USD",
       "gender": "male",
@@ -7419,7 +7432,7 @@
       "name": "Faulkner Todd",
       "segment": "consumer"
     },
-    {
+    "39": {
       "age": 95,
       "currency": "GBP",
       "gender": "female",
@@ -7434,6 +7447,19 @@
       "longitude": -103.714564,
       "name": "Maura Jordan",
       "segment": "business"
+    },
+    "-Nxfh7sHbscWNzkM848W": {
+      "age": 20,
+      "currency": "EUR",
+      "gender": "Male",
+      "hobbies": [
+        "Photography",
+        "Cycling"
+      ],
+      "id": "3",
+      "location": "Madrid, Spain",
+      "name": "Alice Johnson",
+      "segment": "Young Adult"
     }
-  ]
+  }
 }
