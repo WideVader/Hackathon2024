@@ -7,7 +7,7 @@ function Home() {
 
   const fraudulentData = {
     user: {
-      id: "3",
+      id: 3,
       name: "Alice Johnson",
       location: "Madrid, Spain",
       gender: "Female",
@@ -17,7 +17,7 @@ function Home() {
       segment: "Senior",
     },
     transaction: {
-      id: "3",
+      id: 3,
       location: "Paris, France",
       user_agent: "Mozilla/5.0",
       price: 1500,
@@ -26,7 +26,7 @@ function Home() {
       category: "Apparel",
       issuer: "MasterCard",
       product: "Luxury goods",
-      user_id: "3",
+      user_id: 3,
       time: "2024-05-10T16:45:00Z",
       fraud: null,
     },
@@ -34,7 +34,7 @@ function Home() {
 
   const nonFraudulentData = {
     user: {
-      id: "3",
+      id: 3,
       name: "Alice Johnson",
       location: "Madrid, Spain",
       gender: "Male",
@@ -44,7 +44,7 @@ function Home() {
       segment: "Young Adult",
     },
     transaction: {
-      id: "3",
+      id: 3,
       location: "Paris, France",
       user_agent: "Mozilla/5.0",
       price: 100,
@@ -53,7 +53,7 @@ function Home() {
       category: "Electronics",
       issuer: "MasterCard",
       product: "Phone",
-      user_id: "3",
+      user_id: 3,
       time: "2024-05-10T16:45:00Z",
       fraud: null,
     },
