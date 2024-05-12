@@ -1,10 +1,11 @@
 //create express server
-const express = require('express');
+import express from 'express';
 const app = express();
 const port = 3000;
+import router from './router.js';
 
 
-const router = require('./router');
+app.use(express.json())
 app.use(router)
 
 
