@@ -16,13 +16,24 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 pickle_file_path = os.path.join(current_dir, 'database.json')
 pickle_file_path2 = os.path.join(current_dir, 'filename.pickle')
 
+
+
 # Load JSON data
 with open(pickle_file_path, 'r') as f:
     data = json.load(f)
+# TO-DO
+# users_list = [entry for entry in data["users"].values()]
 
-# Convert JSON data to pandas DataFrames
+# # Replace the "users" table with the list of dictionaries
+# data["users"] = users_list
+# users_list = [entry for entry in data["transactions"].values()]
+
+# # Replace the "users" table with the list of dictionaries
+# data["transactions"] = users_list
+# # Convert JSON data to pandas DataFrames
 transactions_df = pd.json_normalize(data["transactions"])
 users_df = pd.json_normalize(data["users"])
+
 
 # Merge transaction and user data based on common attributes like 'user_id' or 'location'
 merged_df = pd.merge(transactions_df, users_df, left_on='user_id', right_on='id', how='inner')
