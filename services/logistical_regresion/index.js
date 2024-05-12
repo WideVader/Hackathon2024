@@ -37,13 +37,23 @@ export function train() {
 
 // train()
 
-predict([{
-    "age": 95,
-    "price": 1000,
-    "t_currency": "EUR",
-    "issuer": "Visa",
-    "product": "Phone",
-    "gender": "male",
-    "currency": "USD",
-    "segment": "Senior",
-}]);
+// predict([{
+//     "age": 20,
+//     "price": 100,
+//     "t_currency": "USD",
+//     "issuer": "MasterCard",
+//     "product": "Phone",
+//     "gender": "male",
+//     "currency": "USD",
+//     "segment": "Young Adult",
+// }]);
+// predict([{
+//     "age": 95,
+//     "price": 1500,
+//     "t_currency": "EUR",
+//     "issuer": "MasterCard",
+//     "product": "Luxury goods",
+//     "gender": "male",
+//     "currency": "EUR",
+//     "segment": "Senior",
+// }]);
