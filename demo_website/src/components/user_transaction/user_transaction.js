@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./home.css";
 import { addData } from "../../db/realTimeDatabase";
+import { useNavigate } from "react-router-dom";
 
-function Home() {
+function UserTransaction() {
   const [selectedFraudType, setSelectedFraudType] = useState(null);
-
+  let navigate = useNavigate();
   const fraudulentData = {
     user: {
       id: 3,
@@ -72,6 +73,8 @@ function Home() {
 
     addData("users", data.user);
     addData("transactions", data.transaction);
+
+    navigate("/image");
     console.log(
       `Submitted as ${selectedFraudType ? "fraudulent" : "not fraudulent"}`
     );
@@ -82,24 +85,24 @@ function Home() {
 
   return (
     <div>
-      <h1>Valid Transaction</h1>
+      <h1>Fraud Transaction</h1>
       <div className="cards">
         <div
-          className={`safe card ${
-            selectedFraudType === false ? "selected" : ""
+          className={`fraudulent card ${
+            selectedFraudType === true ? "selected" : ""
           }`}
-          onClick={() => handleSelectCard(false)}
+          onClick={() => handleSelectCard(true)}
         >
-          <h2>Non-Fraudulent Transaction</h2>
+          <h2>Fraudulent Transaction</h2>
           <hr></hr>
-          <p>Product: Phone</p>
-          <p>User age: 20</p>
-          <p>Price: 100</p>
-          <p>Currency: USD</p>
+          <p>Product: Luxury goods</p>
+          <p>User age: 95</p>
+          <p>Price: 1500</p>
+          <p>Currency: EUR</p>
           <p>Issuer: MasterCard</p>
           <p>Gender: male</p>
-          <p>Category: Electronics</p>
-          <p>Segment: Young Adult</p>
+          <p>Category: Luxury Goods</p>
+          <p>Segment: Senior</p>
         </div>
       </div>
       <div className="submit-button">
@@ -115,4 +118,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default UserTransaction;

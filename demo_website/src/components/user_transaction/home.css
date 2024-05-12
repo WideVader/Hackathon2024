@@ -1,0 +1,87 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+  margin: 0 10px;
+  flex: 1;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.safe.selected,
+.safe.selected h2,
+.safe.selected p {
+  border-color: rgb(48, 180, 0);
+  box-shadow: 0 0 10px rgb(48, 180, 0);
+  background-color: rgb(48, 180, 0);
+  color: white;
+}
+
+.fraudulent.selected,
+.fraudulent.selected h2,
+.fraudulent.selected p {
+  border-color: rgb(222, 0, 0);
+  box-shadow: 0 0 10px rgb(222, 0, 0);
+  background-color: rgb(222, 0, 0);
+  color: white;
+}
+
+.safe:hover {
+  background-color: rgb(48, 180, 0);
+  color: white;
+}
+
+.fraudulent:hover {
+  background-color: rgb(222, 0, 0);
+  color: white;
+}
+
+.card:hover h2,
+.card:hover p {
+  color: white;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
