@@ -66,6 +66,10 @@ function Home() {
 
   const handleSubmit = () => {
     const data = selectedFraudType ? fraudulentData : nonFraudulentData;
+    data.user.id = parseInt(data.user.id, 10);
+    data.transaction.id = parseInt(data.transaction.id, 10);
+    data.transaction.user_id = parseInt(data.transaction.user_id, 10);
+
     addData("users", data.user);
     addData("transactions", data.transaction);
     console.log(
